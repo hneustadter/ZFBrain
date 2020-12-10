@@ -9,6 +9,7 @@ if __name__ == '__main__':
     import numpy as np
     import pyqtgraph.opengl as gl
     import mymath
+    import surface_plotting as sp
 
     print("This is the ZFBrain module!")
 
@@ -37,5 +38,7 @@ if __name__ == '__main__':
     xgrid.scale(0.2, 0.1, 0.1)
     ygrid.scale(0.2, 0.1, 0.1)
     zgrid.scale(0.1, 0.2, 0.1) 
+
+    sp.draw_sphere()
 
     print("This is the end of the ZFBrain module!")
