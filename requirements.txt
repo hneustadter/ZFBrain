@@ -1,3 +1,4 @@
 math
 numpy
 pyqtgraph
+PyQt5

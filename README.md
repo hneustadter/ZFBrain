@@ -14,9 +14,9 @@ Make sure you are in the top-level directory ("ZFBrain").
 
 To run the main program, type (`$` refers to command line prompt)
 
-`$ python -i zfbrain`
+`$ python zfbrain`
 
-Note that if you simply run "python zfbrain" nothing will appear. The `-i` option starts an "interactive" python session, which is necessary to interact with pyqtgraph. To run all unit tests, type
+To run all unit tests, type
 
 `$ python -m unittest -v`
 
