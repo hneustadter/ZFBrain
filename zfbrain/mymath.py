@@ -1,4 +1,10 @@
+"""
+This module is really just to test the documentation and testing
+capabilities of this module.
+"""
+
 import math
+
 
 def my_square_root(val):
     """Single line summary of function
@@ -24,6 +30,8 @@ def my_square_root(val):
         -1
     """
     if val < 0:
-        return -1
+        temp = -1
     else:
-        return math.sqrt(val)
+        temp = math.sqrt(val)
+
+    return temp

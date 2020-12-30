@@ -1,4 +1,5 @@
-math
 numpy
 pyqtgraph
 PyQt5
+PyOpenGL
+PyOpenGL_accelerate
