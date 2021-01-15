@@ -1,0 +1,11 @@
+descriptive string of data
+(M = number of slice of data) (N = number of data points per slice -- MUST be constant)
+slice i index 
+xi1 yi1 zi1
+xi2 yi2 zi2 
+...
+xiN yiN ziN 
+slice i+1 index 
+...
+
+# total number of lines in file = M*(N+1) + 2 
