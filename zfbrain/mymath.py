@@ -1,10 +1,9 @@
 """
-This module is really just to test the documentation and testing
-capabilities of this module.
+.. module:: mymath
+   :synopsis: test the documentation and testing capabilities of the package.
 """
 
 import math
-
 
 def my_square_root(val):
     """Single line summary of function

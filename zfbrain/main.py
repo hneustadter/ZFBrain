@@ -1,7 +1,6 @@
 """
-This is the module ZFBrain.
-
-It is used to visualize the zebra finch brain in 3D.
+.. module:: main
+   :synopsis: main entry point to app.
 """
 
 import sys
@@ -49,6 +48,31 @@ class ZFBrain(QtWidgets.QMainWindow):
         # draw sphere
         sphere = sp.draw_sphere()
         self.ui.mywidget.addItem(sphere)
+
+        # custom option
+        verts = np.array([
+            [0, 0, 0],
+            [2, 0, 0],
+            [1, 2, 0],
+            [1, 1, 1],
+        ])
+        faces = np.array([
+            [0, 1, 2],
+            [0, 1, 3],
+            [0, 2, 3],
+            [1, 2, 3]
+        ])
+        colors = np.array([
+            [1, 0, 0, 0.3],
+            [0, 1, 0, 0.3],
+            [0, 0, 1, 0.3],
+            [1, 1, 0, 0.3]
+        ])
+
+        ## Mesh item will automatically compute face normals.
+        m1 = gl.GLMeshItem(vertexes=verts, faces=faces, faceColors=colors, smooth=False)
+        m1.setGLOptions('additive')
+        self.ui.mywidget.addItem(m1)
 
         # there's gotta be a better way to do this, but I don't have it now.
         self.ui.checkBox1.setChecked(True)

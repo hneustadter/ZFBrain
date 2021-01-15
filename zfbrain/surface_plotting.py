@@ -1,6 +1,6 @@
 """
-This module defines functions that are used to generate graphical
-objects in the main viewer window.
+.. module:: surface_plotting
+   :synopsis: defines functions and classes for plotting surfaces.
 """
 
 import pyqtgraph.opengl as gl
@@ -16,3 +16,4 @@ def draw_sphere():
             glOptions="additive",
             drawEdges=True
         )
+        
