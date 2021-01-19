@@ -12,6 +12,7 @@ from pyqtgraph.opengl import GLViewWidget
 from pyqtgraph.Qt import QtGui, QtCore, QtWidgets, uic
 import mymath
 import surface_plotting as sp
+import read_data
 
 
 class ZFBrain(QtWidgets.QMainWindow):
@@ -47,30 +48,33 @@ class ZFBrain(QtWidgets.QMainWindow):
 
         # draw sphere
         sphere = sp.draw_sphere()
-        self.ui.mywidget.addItem(sphere)
+        #self.ui.mywidget.addItem(sphere)
 
         # custom option
-        verts = np.array([
-            [0, 0, 0],
-            [2, 0, 0],
-            [1, 2, 0],
-            [1, 1, 1],
-        ])
-        faces = np.array([
-            [0, 1, 2],
-            [0, 1, 3],
-            [0, 2, 3],
-            [1, 2, 3]
-        ])
-        colors = np.array([
-            [1, 0, 0, 0.3],
-            [0, 1, 0, 0.3],
-            [0, 0, 1, 0.3],
-            [1, 1, 0, 0.3]
-        ])
+        #verts = np.array([
+        #    [0, 0, 0],
+        #    [2, 0, 0],
+        #    [1, 2, 0],
+        #    [1, 1, 1],
+        #])
+        #faces = np.array([
+        #    [0, 1, 2],
+        #    [0, 1, 3],
+        #    [0, 2, 3],
+        #    [1, 2, 3]
+        #])
+        #colors = np.array([
+        #    [1, 0, 0, 0.3],
+        #    [0, 1, 0, 0.3],
+        #    [0, 0, 1, 0.3],
+        #    [1, 1, 0, 0.3]
+        #])
+
+        verts, faces, colors = read_data.read_surface("zfbrain/data/test_surface.surf")
 
         ## Mesh item will automatically compute face normals.
-        m1 = gl.GLMeshItem(vertexes=verts, faces=faces, faceColors=colors, smooth=False)
+        #m1 = gl.GLMeshItem(vertexes=verts, faces=faces, faceColors=colors, smooth=False,drawEdges=True)
+        m1 = gl.GLMeshItem(vertexes=verts, faces=faces, color=(1, 0, 0, 0.2), smooth=False, drawEdges=True)
         m1.setGLOptions('additive')
         self.ui.mywidget.addItem(m1)
 
