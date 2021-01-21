@@ -6,6 +6,8 @@
 Welcome to ZFBrain's documentation!
 ===================================
 
+This is just an example paragraph.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
