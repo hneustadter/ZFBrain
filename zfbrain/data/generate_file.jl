@@ -1,11 +1,11 @@
 #f(θ,t,tmax) = ((t+1)*cos(θ),(t+1)*sin(θ),t/tmax)
-f(θ,t,tmax) = (t/tmax*(t/tmax-1)*cos(θ),t/tmax*(t/tmax-1)*sin(θ),t/tmax)
+f(θ,t,tmax) = (3*t/tmax*(t/tmax-1)*cos(θ),3*t/tmax*(t/tmax-1)*sin(θ),3*t/tmax)
 
 function generate_data()
     # L=3, N=4 is test case in notes
     L = 8
     N = 20
-    io=open("test_surface.surf","w")
+    io=open("test_surface2.surf","w")
     println(io,"example of data file from slice")
     println(io,L," ",N)
     for ti=0:(L-1)

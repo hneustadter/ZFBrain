@@ -4,116 +4,170 @@
 """
 
 import sys
-import os
+
 import numpy as np
+
 import pyqtgraph as pg
 import pyqtgraph.opengl as gl
-from pyqtgraph.opengl import GLViewWidget
-from pyqtgraph.Qt import QtGui, QtCore, QtWidgets, uic
-import mymath
+from PyQt5 import QtGui, QtWidgets
+
 import surface_plotting as sp
 import read_data
 
 
-class ZFBrain(QtWidgets.QMainWindow):
+# Enable antialiasing for prettier plots
+pg.setConfigOptions(antialias=True)
+
+
+class brainView(gl.GLViewWidget):
+    """ main class for viewing brain regions """
+    def __init__(self, parent=None):
+        super(brainView, self).__init__(parent)
+
+        # set camera settings
+        self.setCameraPosition(distance=10, elevation=20)
+        # sets center of rotation for field
+        new_center = np.array([0.0, 0.0, 1.5])
+        self.opts['center'] = pg.Vector(new_center)
+
+        testfile1 = "zfbrain/data/test_surface.surf"
+        verts1, faces1, colors1 = read_data.read_surface(testfile1)
+        testfile2 = "zfbrain/data/test_surface2.surf"
+        verts2, faces2, colors2 = read_data.read_surface(testfile2)
+
+        self.hvc = gl.GLMeshItem(vertexes=verts1, faces=faces1, color=(1, 0, 0, 0.2),
+                           smooth=False, drawEdges=True)
+        self.hvc.setGLOptions('additive')
+
+        self.outer = gl.GLMeshItem(vertexes=verts2, faces=faces2, color=(0, 1, 0, 0.2),
+                           smooth=False, drawEdges=True)
+        self.outer.setGLOptions('additive')
+
+        self.addItem(self.outer)
+        self.addItem(self.hvc)
+
+    def redraw_surfaces(self, isCheckedList):
+        self.clear()
+
+        if isCheckedList[0] is True:
+            self.addItem(self.outer)
+        if isCheckedList[1] is True:
+            self.addItem(self.hvc)
+        if isCheckedList[2] is True:
+            pass
+        if isCheckedList[3] is True:
+            pass
+
+
+class BrainRegionChooser(QtWidgets.QWidget):
+    """ main settings class for which brain regions to show """
+    def __init__(self, parent=None):
+        super(BrainRegionChooser, self).__init__(parent)
+
+        layout = QtWidgets.QVBoxLayout()
+        region_label = QtGui.QLabel("Choose which regions to show")
+        self.viewBrainCB = QtGui.QCheckBox("Outer Brain")
+        self.viewHVCCB = QtGui.QCheckBox("HVC")
+        self.viewAreaXCB = QtGui.QCheckBox("Area X")
+        self.viewRACB = QtGui.QCheckBox("RA")
+
+        self.viewBrainCB.setChecked(True)
+        self.viewHVCCB.setChecked(True)
+        self.viewAreaXCB.setChecked(True)
+        self.viewRACB.setChecked(True)
+
+        self.isCheckedList = [True, True, True, True]
+
+        layout.addWidget(region_label)
+        layout.addWidget(self.viewBrainCB)
+        layout.addWidget(self.viewHVCCB)
+        layout.addWidget(self.viewAreaXCB)
+        layout.addWidget(self.viewRACB)
+
+        self.setLayout(layout)
+
+    def get_checked_state(self):
+        # Outer Brain
+        if self.viewBrainCB.isChecked():
+            self.isCheckedList[0] = True
+        else:
+            self.isCheckedList[0] = False
+
+        # HVC
+        if self.viewHVCCB.isChecked():
+            self.isCheckedList[1] = True
+        else:
+            self.isCheckedList[1] = False
+
+        # Area X
+        if self.viewAreaXCB.isChecked():
+            self.isCheckedList[2] = True
+        else:
+            self.isCheckedList[2] = False
+
+        # RA
+        if self.viewRACB.isChecked():
+            self.isCheckedList[3] = True
+        else:
+            self.isCheckedList[3] = False
+
+
+class Settings(QtWidgets.QWidget):
+    """ main settings class """
+    def __init__(self, parent=None):
+        super(Settings, self).__init__(parent)
+
+        layout = QtWidgets.QVBoxLayout()
+
+        self.brc = BrainRegionChooser()
+
+        layout.addWidget(self.brc)
+        layout.addStretch(1)
+
+        self.setLayout(layout)
+
+
+class MainWindow(QtWidgets.QMainWindow):
     """ main class for ZFBrain """
     def __init__(self):
-        super(ZFBrain, self).__init__()
-        self.init_ui()
+        super(MainWindow, self).__init__()
 
-    def init_ui(self):
-        """Initializes GUI"""
-        ui_path = os.path.join("zfbrain", "ui", "zfbrain.ui")
-        self.ui = uic.loadUi(ui_path)
+        self.setWindowTitle('ZFBrain')
+        self.resize(1000, 600)
 
-        self.ui.setWindowTitle('ZFBrain')
-        # self.ui.setWindowIcon(QtGui.QIcon('logo.png'))
+        main_layout = QtWidgets.QHBoxLayout()
 
-        # this is just a test that mymath was imported as expected
-        a = mymath.my_square_root(324.0)
+        self.brv = brainView()
+        self.sl = Settings()
 
-        xgrid = gl.GLGridItem()
-        ygrid = gl.GLGridItem()
-        zgrid = gl.GLGridItem()
-        self.ui.mywidget.addItem(xgrid)
-        self.ui.mywidget.addItem(ygrid)
-        self.ui.mywidget.addItem(zgrid)
-        xgrid.rotate(90, 0, 1, 0)
-        ygrid.rotate(90, 1, 0, 0)
+        main_layout.addWidget(self.brv, stretch=4)
+        main_layout.addWidget(self.sl, stretch=1)
 
-        # scale each grid differently
-        xgrid.scale(0.2, 0.1, 0.1)
-        ygrid.scale(0.2, 0.1, 0.1)
-        zgrid.scale(0.1, 0.2, 0.1)
+        # checkboxes
+        self.sl.brc.viewBrainCB.toggled.connect(self.something_toggled)
+        self.sl.brc.viewHVCCB.toggled.connect(self.something_toggled)
+        self.sl.brc.viewAreaXCB.toggled.connect(self.something_toggled)
+        self.sl.brc.viewRACB.toggled.connect(self.something_toggled)
 
-        # draw sphere
-        sphere = sp.draw_sphere()
-        #self.ui.mywidget.addItem(sphere)
+        main_widget = QtWidgets.QWidget()
+        main_widget.setLayout(main_layout)
+        self.setCentralWidget(main_widget)
 
-        # custom option
-        #verts = np.array([
-        #    [0, 0, 0],
-        #    [2, 0, 0],
-        #    [1, 2, 0],
-        #    [1, 1, 1],
-        #])
-        #faces = np.array([
-        #    [0, 1, 2],
-        #    [0, 1, 3],
-        #    [0, 2, 3],
-        #    [1, 2, 3]
-        #])
-        #colors = np.array([
-        #    [1, 0, 0, 0.3],
-        #    [0, 1, 0, 0.3],
-        #    [0, 0, 1, 0.3],
-        #    [1, 1, 0, 0.3]
-        #])
+    def something_toggled(self):
+        # get isCheckedArray
+        self.sl.brc.get_checked_state()
 
-        verts, faces, colors = read_data.read_surface("zfbrain/data/test_surface.surf")
-
-        ## Mesh item will automatically compute face normals.
-        #m1 = gl.GLMeshItem(vertexes=verts, faces=faces, faceColors=colors, smooth=False,drawEdges=True)
-        m1 = gl.GLMeshItem(vertexes=verts, faces=faces, color=(1, 0, 0, 0.2), smooth=False, drawEdges=True)
-        m1.setGLOptions('additive')
-        self.ui.mywidget.addItem(m1)
-
-        # there's gotta be a better way to do this, but I don't have it now.
-        self.ui.checkBox1.setChecked(True)
-        self.ui.checkBox1.stateChanged.connect(
-            lambda: self.checkbox_state(self.ui.checkBox1))
-        self.ui.checkBox2.setChecked(True)
-        self.ui.checkBox2.stateChanged.connect(
-            lambda: self.checkbox_state(self.ui.checkBox2))
-        self.ui.checkBox3.setChecked(True)
-        self.ui.checkBox3.stateChanged.connect(
-            lambda: self.checkbox_state(self.ui.checkBox3))
-        self.ui.checkBox4.setChecked(True)
-        self.ui.checkBox4.stateChanged.connect(
-            lambda: self.checkbox_state(self.ui.checkBox4))
-        self.ui.checkBox5.setChecked(True)
-        self.ui.checkBox5.stateChanged.connect(
-            lambda: self.checkbox_state(self.ui.checkBox5))
-        # this doesn't work as expected, but it is the closest alternative
-        # self.checkboxes = (self.ui.checkboxes.itemAt(i).widget() for
-        # i in range(self.ui.checkboxes.count()))
-        # for item in self.checkboxes:
-        #    item.setChecked(True)
-        #    item.stateChanged.connect(lambda:self.checkbox_state(item))
-
-        self.ui.show()
-
-    def checkbox_state(self, b):
-        if b.isChecked():
-            print(b.text()+" is selected")
-        else:
-            print(b.text()+" is deselected")
+        # redraw everything
+        self.brv.redraw_surfaces(self.sl.brc.isCheckedList)
 
 
 def main():
     app = QtGui.QApplication(sys.argv)
     app.setApplicationName('ZFBrain')
-    ZFBrain()
+
+    window = MainWindow()
+    window.show()
+
     sys.exit(app.exec_())
 
 
