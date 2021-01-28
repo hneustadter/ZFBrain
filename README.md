@@ -1,6 +1,7 @@
 # ZFBrain
 
 [![Documentation Status](https://readthedocs.org/projects/zfbrain/badge/?version=latest)](https://zfbrain.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://travis-ci.com/hneustadter/ZFBrain.svg?branch=master)](https://travis-ci.com/hneustadter/ZFBrain)
 
 This code is used to visualize the Zebra Finch brain in 3D.
 
