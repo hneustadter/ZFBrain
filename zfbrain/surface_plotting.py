@@ -5,6 +5,7 @@
 
 import pyqtgraph.opengl as gl
 
+
 def draw_sphere():
     """This is a basic method just to draw a sphere. """
     md = gl.MeshData.sphere(rows=10, cols=10, radius=1)
@@ -16,4 +17,3 @@ def draw_sphere():
             glOptions="additive",
             drawEdges=True
         )
-        
