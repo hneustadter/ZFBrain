@@ -1,2 +1,2 @@
 sphinx==3.4.3
-sphinx_theme==1.0
+stanford_theme
