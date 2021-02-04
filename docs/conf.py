@@ -16,6 +16,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -33,7 +34,7 @@ release = '0.1'
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-# needs_sphinx = '3.4'
+needs_sphinx = '3.4'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -43,7 +44,7 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages'
+    'sphinx_rtd_theme'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -79,5 +80,4 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "stanford_theme"
-html_theme_path = ["_themes", ]
+html_theme = "sphinx_rtd_theme"
