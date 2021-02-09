@@ -4,3 +4,12 @@ env
 
 docs/doctrees/
 docs/html/
+
+build/
+dist/
+
+.zip
+.toc
+.pkg
+.pyo
+.html

@@ -24,15 +24,9 @@ class brainView(gl.GLViewWidget):
     def __init__(self, parent=None):
         super(brainView, self).__init__(parent)
 
-        # set camera settings
-        self.setCameraPosition(distance=10, elevation=20)
-        # sets center of rotation for field
-        new_center = np.array([0.0, 0.0, 1.5])
-        self.opts['center'] = pg.Vector(new_center)
-
         testfile1 = "zfbrain/data/test_surface.surf"
         verts1, faces1, colors1 = read_data.read_surface(testfile1)
-        testfile2 = "zfbrain/data/test_surface2.surf"
+        testfile2 = "zfbrain/data/whole_brain.surf"
         verts2, faces2, colors2 = read_data.read_surface(testfile2)
 
         self.hvc = gl.GLMeshItem(vertexes=verts1, faces=faces1, color=(1, 0, 0, 0.2),
@@ -45,6 +39,17 @@ class brainView(gl.GLViewWidget):
 
         self.addItem(self.outer)
         self.addItem(self.hvc)
+
+        # choose center of whole-brain
+        x_center = np.average(verts2[:, 0])
+        y_center = np.average(verts2[:, 1])
+        z_center = np.average(verts2[:, 2])
+
+       # set camera settings
+        self.setCameraPosition(distance=1000, elevation=20)
+        # sets center of rotation for field
+        new_center = np.array([x_center, y_center, z_center])
+        self.opts['center'] = pg.Vector(new_center)
 
     def redraw_surfaces(self, isCheckedList):
         self.clear()
