@@ -2,18 +2,19 @@ language: python            # this works for Linux but is an error on macOS or W
 
 jobs:
   include:
-    - name: "Python 3.8.0 on Xenial Linux"
+    - name: "Python 3.8.0 on Focal Linux"
+      dist: focal
       python: 3.8           # this works for Linux but is ignored on macOS or Windows
       install: 
         - pip3 install --upgrade pip  # all three OSes agree about 'pip3'
         - pip3 install -r requirements.txt
         - pip3 install pyinstaller
       script: python3 -m unittest -v || python -m unittest -v
-      before_deploy: pyinstaller --onefile --clean main.py -n linux_main
+      before_deploy: pyinstaller --onefile --clean --paths zfbrain --name zfbrain_linux.exe zfbrain/__main__.py 
       deploy:
         provider: releases
         api_key: $RELEASE_TOKEN
-        file: dist/linux_main
+        file: dist/zfbrain_linux.exe
         skip_cleanup: true
         draft: true
         on:
@@ -28,11 +29,14 @@ jobs:
         - pip3 install -r requirements.txt
         - pip3 install pyinstaller
       script: python3 -m unittest -v || python -m unittest -v
-      before_deploy: pyinstaller --onefile --clean main.py --windowed -n macos_main
+      before_deploy: 
+        - pyinstaller --onefile --clean --windowed --paths zfbrain --name zfbrain_macos --osx-bundle-identifier UROP.OSS.brain zfbrain/__main__.py 
+        - zip dist/zfbrain_macos.zip dist/zfbrain_macos.app -r    # zip up app
       deploy:
         provider: releases
         api_key: $RELEASE_TOKEN
-        file: dist/macos_main
+        file_glob: true
+        file: dist/zfbrain_macos.zip
         skip_cleanup: true
         draft: true
         on:
@@ -50,11 +54,11 @@ jobs:
         - pip3 install -r requirements.txt
         - pip3 install pyinstaller
       script: python3 -m unittest -v || python -m unittest -v
-      before_deploy: pyinstaller --onefile --clean main.py -n windows_main.exe
+      before_deploy: pyinstaller --onefile --clean --noconsole --paths orgochemvisualizer --name zfbrain_windows.exe zfbrain/__main__.py 
       deploy:
         provider: releases
         api_key: $RELEASE_TOKEN
-        file: dist\windows_main.exe
+        file: dist\zfbrain_windows.exe
         skip_cleanup: true
         draft: true
         on:

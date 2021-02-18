@@ -3,6 +3,7 @@
    :synopsis: main entry point to app.
 """
 
+import os
 import sys
 
 import numpy as np
@@ -14,9 +15,10 @@ from PyQt5 import QtGui, QtWidgets
 import surface_plotting as sp
 import read_data
 
-
 # Enable antialiasing for prettier plots
 pg.setConfigOptions(antialias=True)
+
+print(os.getcwd())
 
 
 class brainView(gl.GLViewWidget):
@@ -30,12 +32,10 @@ class brainView(gl.GLViewWidget):
         verts2, faces2, colors2 = read_data.read_surface(testfile2)
 
         self.hvc = gl.GLMeshItem(vertexes=verts1, faces=faces1, color=(1, 0, 0, 0.2),
-                           smooth=False, drawEdges=True)
-        self.hvc.setGLOptions('additive')
+                           smooth=True, drawEdges=False, shader='normalColor', glOptions='opaque')
 
         self.outer = gl.GLMeshItem(vertexes=verts2, faces=faces2, color=(0, 1, 0, 0.2),
-                           smooth=False, drawEdges=True)
-        self.outer.setGLOptions('additive')
+                           smooth=True, drawEdges=False, shader='normalColor', glOptions='opaque')
 
         self.addItem(self.outer)
         self.addItem(self.hvc)
