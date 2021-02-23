@@ -32,6 +32,6 @@ To run all unit tests, type
 
 Contributions to ZFBrain are welcome!
 
-The preferred method of submitting a change is by making a pull request on GitHub against the "master" branch
+The preferred method of submitting a change is by making a pull request on GitHub against the "master" branch.
 
 The documentation is generated using Sphinx.
