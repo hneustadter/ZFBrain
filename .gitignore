@@ -13,3 +13,5 @@ dist/
 .pkg
 .pyo
 .html
+
+playground/

@@ -1,9 +1,50 @@
 import numpy as np
 
-# test_file_name = "test_surface.surf"
-
 
 def read_surface(file_name):
+    """Reads in surface data type in the *.surf format.
+
+    Note
+    ----
+    L is the number of slices of data, N is the number of data points
+    per slice. Each must be constant.
+
+    A typical *.surf data file is given by the following:
+
+    .. code-block:: python
+        :linenos:
+
+        descriptive string of data
+        L N
+        x11 y11 z11
+        x12 y12 z12
+            ...
+        x1N y1N z1N
+        x21 y21 z21
+            ...
+
+    The total number of lines in file_name is 2+L*N
+
+    Parameters
+    ----------
+    file_name : string
+        Filename for surface data.
+
+    Returns
+    -------
+    verts : ndarray(dtype=float, ndim=2)
+        Vertex matrix with shape (`N`, 3). Each row represents a point in 3D,
+        and each column represents the X, Y, Z coordinate.
+    faces : ndarray(dtype=int, ndim=2)
+        Face indices matrix with shape (`N`, 3). Each row represents a face
+        (triangle), and each column represents the index of the data point
+        for a vertex.
+    colors : ndarray(dtype=float, ndim=2)
+        Color matrix with shape (N, 4), where N is the number of data points.
+        Each face corresponds to a row in `colors`, and each column value
+        corresponds to R G B A, in that order.
+
+    """
     with open(file_name) as f:
         lines = f.readlines()
 

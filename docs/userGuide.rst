@@ -1,8 +1,37 @@
+.. _user-guide:
+
 User\'s Guide
 *************
-.. toctree::
-    :maxdepth: 2
 
-    Introduction
+Introduction
+------------
 
-.. glossary::
+The ZFBrain software 
+
+Installation
+------------
+
+To install ZFBrain, see the releases tab on our Github.
+
+Scientific Background
+---------------------
+
+The neural pathways of the zebra finch that are involved in the production
+of song have proven to have many parallels with the inner workings of the
+human brain used in the production of speech. Zebra finches and humans both
+(1) have evolved to possess similar vocal tracts in the brain that allow for
+hearing and the rapid production of vocal sounds; (2) possess a specific
+forebrain network used for auditory processing and motor sequencing of learned
+vocal sounds; and (3) develop their adult speech patterns during specific time
+periods for both auditory and sensorimotor learning. Three of the primary
+structures involved in this research include the HVC, Area X of the avian basal
+ganglia, and the robust nucleus of the arcopallium (RA). The HVC is a premotor
+region that consists of interneurons and connections to the association cortex,
+Area X, and the RA. The HVC is believed to direct different aspects of song
+production in adult male zebra finches and aid in auditory memory formation in
+adult female zebra finches. Area X is a region of the basal ganglia in the brain
+of a zebra finch that coordinates with the HVC to influence juvenile learning of
+song, particularly in the processes of vocal variation, exploration, and feedback-
+based evaluation. The RA consists of the vocal motor cortex and coordinates with
+the HVC to function largely in the recitation of bird song, specifically in relation
+to regulating the timing and serial order of song syllables.

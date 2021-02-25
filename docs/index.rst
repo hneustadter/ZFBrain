@@ -6,36 +6,12 @@
 Welcome to ZFBrain's documentation!
 ===================================
 
+ZFBrain is software for the visualization of brain regions relevant to song production in
+Zebra Finches. Please see the :ref:`user-guide` for information on how to use ZFBrain, or the
+:ref:`developer-guide` for information on how to contribute!
+
 .. toctree::
-   :maxdepth: 2
-   
+   :hidden:
+
    userGuide
    developerGuide
-
-Documentation for the Code
-**************************
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-ZFBrain main
-===================
-.. automodule:: zfbrain.main
-   :members:
-
-ZFBrain mymath
-===================
-.. automodule:: zfbrain.mymath
-   :members:
-
-ZFBrain surface_plotting
-===================
-.. automodule:: zfbrain.surface_plotting
-   :members:
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
