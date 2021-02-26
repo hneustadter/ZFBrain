@@ -13,7 +13,6 @@ import pyqtgraph.opengl as gl
 from PyQt5 import QtGui, QtWidgets
 
 import surface_plotting as sp
-import read_data
 
 # Enable antialiasing for prettier plots
 pg.setConfigOptions(antialias=True)
@@ -27,15 +26,19 @@ class brainView(gl.GLViewWidget):
         super(brainView, self).__init__(parent)
 
         testfile1 = "zfbrain/data/test_surface.surf"
-        verts1, faces1, colors1 = read_data.read_surface(testfile1)
+        verts1, faces1 = sp.read_surface(testfile1)
         testfile2 = "zfbrain/data/whole_brain.surf"
-        verts2, faces2, colors2 = read_data.read_surface(testfile2)
+        verts2, faces2 = sp.read_surface(testfile2)
 
-        self.hvc = gl.GLMeshItem(vertexes=verts1, faces=faces1, color=(1, 0, 0, 0.2),
-                           smooth=True, drawEdges=False, shader='normalColor', glOptions='opaque')
+        self.hvc = gl.GLMeshItem(vertexes=verts1, faces=faces1,
+                                 color=(1, 0, 0, 0.2), smooth=True,
+                                 drawEdges=False, shader='normalColor',
+                                 glOptions='opaque')
 
-        self.outer = gl.GLMeshItem(vertexes=verts2, faces=faces2, color=(0, 1, 0, 0.2),
-                           smooth=True, drawEdges=False, shader='normalColor', glOptions='opaque')
+        self.outer = gl.GLMeshItem(vertexes=verts2, faces=faces2,
+                                   color=(0, 1, 0, 0.2), smooth=True,
+                                   drawEdges=False, shader='normalColor',
+                                   glOptions='opaque')
 
         self.addItem(self.outer)
         self.addItem(self.hvc)
@@ -45,7 +48,7 @@ class brainView(gl.GLViewWidget):
         y_center = np.average(verts2[:, 1])
         z_center = np.average(verts2[:, 2])
 
-       # set camera settings
+        # set camera settings
         self.setCameraPosition(distance=1000, elevation=20)
         # sets center of rotation for field
         new_center = np.array([x_center, y_center, z_center])
