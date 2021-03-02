@@ -15,3 +15,4 @@ Zebra Finches. Please see the :ref:`user-guide` for information on how to use ZF
 
    userGuide
    developerGuide
+   modules

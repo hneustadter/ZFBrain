@@ -9,7 +9,4 @@ Developer\'s Guide
 This section gives function and class definitions used in the development of 
 ZFBrain. 
 
-.. automodule:: zfbrain.read_data
-   :members:
-
 .. glossary::
