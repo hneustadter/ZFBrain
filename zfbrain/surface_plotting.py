@@ -162,7 +162,7 @@ def write_surf(A, L, N, out_filename, description=" "):
     file.close()
 
 
-def xml_to_surf_convert(input_file, output_file):
+def generate_brainexterior_surf(input_file):
     # This code assumes that the hemisphere cut-off is given by the last 
     # slice and is in the z-direction, and starts at zero
 
@@ -171,10 +171,11 @@ def xml_to_surf_convert(input_file, output_file):
     MID_Z = DELTA_Z*18
     N_interp = 100
 
-    output_filename = output_file
+    output_filename = "whole_brain"
     filename = input_file
     tree = ET.parse(filename)
     root = tree.getroot()
+    ATTRIB = 'Dendritic extension'
 
     # ----------------------------------------------
     # 1. first pass, get number of slices and points
@@ -257,5 +258,260 @@ def xml_to_surf_convert(input_file, output_file):
     N = N_interp
     write_surf(new_nodes, L, N, output_filename,
                description="This is the outer brain")
+
+    print(f"Output file {output_filename}")
+
+
+def generate_HVC_surf(input_file):
+    # This code is used to generate the HVC surf
+
+    # needs to be hard-coded right now
+    DELTA_Z = 40
+    MID_Z = DELTA_Z*18  # there are 18 total slices per hemisphere
+    N_interp = 100
+    OFFSET = 9*DELTA_Z
+
+    output_filename = "HVC"
+    filename = input_file
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    ATTRIB = 'HVC L'
+
+    # ----------------------------------------------
+    # 1. first pass, get number of slices and points
+    # ----------------------------------------------
+
+    points = []
+
+    ti = 0
+    elID = 0
+    weird_url = '{http://www.mbfbioscience.com/2007/neurolucida}'
+    contour_str = weird_url + 'contour'
+    point_str = weird_url + 'point'
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            points.append(0)
+            for point in contour.iter(point_str):
+                points[ti] += 1
+            ti += 1
+        elID += 1
+
+    N_points = sum(points)
+    nodes = np.zeros((N_points, 3), dtype=float)
+
+    # -------------------------------
+    # 2. second pass, get actual data
+    # -------------------------------
+
+    ti = 0
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            for point in contour.iter(point_str):
+                nodes[ti, 0] = point.attrib['x']
+                nodes[ti, 1] = point.attrib['y']
+                nodes[ti, 2] = point.attrib['z']
+                ti += 1
+
+    # --------------------------------------------------------------
+    # 3. interpolate values so each slice has equal number of points
+    # --------------------------------------------------------------
+
+    num_slices = len(points)
+    new_nodes = np.zeros((num_slices*N_interp, 3), dtype=float)
+
+    for ti in range(num_slices):
+        ind_start = sum(points[0:ti])
+        ind_end = ind_start + points[ti]
+        xvals = nodes[ind_start:ind_end, 0]
+        yvals = nodes[ind_start:ind_end, 1]
+
+        xi, yi = get_interpolant(xvals, yvals, N_interp)
+
+        for tj in range(N_interp-1, -1, -1):
+            new_nodes[ti*N_interp + tj, 0] = xi[tj]
+            new_nodes[ti*N_interp + tj, 1] = yi[tj]
+            new_nodes[ti*N_interp + tj, 2] = DELTA_Z*ti + OFFSET
+
+        # uncomment this line to display slices and interpolant
+        # icc.show_interpolate(xvals, yvals, N_interp)
+
+    # --------------------------
+    # 4. write data to surf file
+    # --------------------------
+
+    L = num_slices
+    N = N_interp
+    write_surf(new_nodes, L, N, output_filename,
+               description=f"This is the {output_filename}")
+
+    print(f"Output file {output_filename}")
+
+
+def generate_RA_surf(input_file):
+    # This code is used to generate the HVC surf
+
+    # needs to be hard-coded right now
+    DELTA_Z = 40
+    MID_Z = DELTA_Z*18  # there are 18 total slices per hemisphere
+    N_interp = 100
+    OFFSET = 7*DELTA_Z
+
+    output_filename = "RA"
+    filename = input_file
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    ATTRIB = 'RA'
+
+    # ----------------------------------------------
+    # 1. first pass, get number of slices and points
+    # ----------------------------------------------
+
+    points = []
+
+    ti = 0
+    elID = 0
+    weird_url = '{http://www.mbfbioscience.com/2007/neurolucida}'
+    contour_str = weird_url + 'contour'
+    point_str = weird_url + 'point'
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            points.append(0)
+            for point in contour.iter(point_str):
+                points[ti] += 1
+            ti += 1
+        elID += 1
+
+    N_points = sum(points)
+    nodes = np.zeros((N_points, 3), dtype=float)
+
+    # -------------------------------
+    # 2. second pass, get actual data
+    # -------------------------------
+
+    ti = 0
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            for point in contour.iter(point_str):
+                nodes[ti, 0] = point.attrib['x']
+                nodes[ti, 1] = point.attrib['y']
+                nodes[ti, 2] = point.attrib['z']
+                ti += 1
+
+    # --------------------------------------------------------------
+    # 3. interpolate values so each slice has equal number of points
+    # --------------------------------------------------------------
+
+    num_slices = len(points)
+    new_nodes = np.zeros((num_slices*N_interp, 3), dtype=float)
+
+    for ti in range(num_slices):
+        ind_start = sum(points[0:ti])
+        ind_end = ind_start + points[ti]
+        xvals = nodes[ind_start:ind_end, 0]
+        yvals = nodes[ind_start:ind_end, 1]
+
+        xi, yi = get_interpolant(xvals, yvals, N_interp)
+
+        for tj in range(N_interp-1, -1, -1):
+            new_nodes[ti*N_interp + tj, 0] = xi[tj]
+            new_nodes[ti*N_interp + tj, 1] = yi[tj]
+            new_nodes[ti*N_interp + tj, 2] = DELTA_Z*ti + OFFSET
+
+        # uncomment this line to display slices and interpolant
+        # icc.show_interpolate(xvals, yvals, N_interp)
+
+    # --------------------------
+    # 4. write data to surf file
+    # --------------------------
+
+    L = num_slices
+    N = N_interp
+    write_surf(new_nodes, L, N, output_filename,
+               description=f"This is the {output_filename}")
+
+    print(f"Output file {output_filename}")
+
+
+def generate_X_surf(input_file):
+    # This code is used to generate the HVC surf
+
+    # needs to be hard-coded right now
+    DELTA_Z = 40
+    MID_Z = DELTA_Z*18  # there are 18 total slices per hemisphere
+    N_interp = 100
+    OFFSET = 6*DELTA_Z
+
+    output_filename = "AreaX"
+    filename = input_file
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    ATTRIB = 'Area X'
+
+    # ----------------------------------------------
+    # 1. first pass, get number of slices and points
+    # ----------------------------------------------
+
+    points = []
+
+    ti = 0
+    elID = 0
+    weird_url = '{http://www.mbfbioscience.com/2007/neurolucida}'
+    contour_str = weird_url + 'contour'
+    point_str = weird_url + 'point'
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            points.append(0)
+            for point in contour.iter(point_str):
+                points[ti] += 1
+            ti += 1
+        elID += 1
+
+    N_points = sum(points)
+    nodes = np.zeros((N_points, 3), dtype=float)
+
+    # -------------------------------
+    # 2. second pass, get actual data
+    # -------------------------------
+
+    ti = 0
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            for point in contour.iter(point_str):
+                nodes[ti, 0] = point.attrib['x']
+                nodes[ti, 1] = point.attrib['y']
+                nodes[ti, 2] = point.attrib['z']
+                ti += 1
+
+    # --------------------------------------------------------------
+    # 3. interpolate values so each slice has equal number of points
+    # --------------------------------------------------------------
+
+    num_slices = len(points)
+    new_nodes = np.zeros((num_slices*N_interp, 3), dtype=float)
+
+    for ti in range(num_slices):
+        ind_start = sum(points[0:ti])
+        ind_end = ind_start + points[ti]
+        xvals = nodes[ind_start:ind_end, 0]
+        yvals = nodes[ind_start:ind_end, 1]
+
+        xi, yi = get_interpolant(xvals, yvals, N_interp)
+
+        for tj in range(N_interp-1, -1, -1):
+            new_nodes[ti*N_interp + tj, 0] = xi[tj]
+            new_nodes[ti*N_interp + tj, 1] = yi[tj]
+            new_nodes[ti*N_interp + tj, 2] = DELTA_Z*ti + OFFSET
+
+        # uncomment this line to display slices and interpolant
+        # icc.show_interpolate(xvals, yvals, N_interp)
+
+    # --------------------------
+    # 4. write data to surf file
+    # --------------------------
+
+    L = num_slices
+    N = N_interp
+    write_surf(new_nodes, L, N, output_filename,
+               description=f"This is the {output_filename}")
 
     print(f"Output file {output_filename}")

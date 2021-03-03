@@ -17,39 +17,58 @@ import surface_plotting as sp
 # Enable antialiasing for prettier plots
 pg.setConfigOptions(antialias=True)
 
-print(os.getcwd())
-
 
 class brainView(gl.GLViewWidget):
     """ main class for viewing brain regions """
     def __init__(self, parent=None):
         super(brainView, self).__init__(parent)
 
-        testfile1 = "zfbrain/data/test_surface.surf"
-        verts1, faces1 = sp.read_surface(testfile1)
-        testfile2 = "zfbrain/data/whole_brain.surf"
-        verts2, faces2 = sp.read_surface(testfile2)
+        HVC_file = "zfbrain/data/HVC.surf"
+        RA_file = "zfbrain/data/RA.surf"
+        X_file = "zfbrain/data/AreaX.surf"              # what are frogs?
+        brain_file = "zfbrain/data/whole_brain.surf"
 
-        self.hvc = gl.GLMeshItem(vertexes=verts1, faces=faces1,
+        verts_HVC, faces_HVC = sp.read_surface(HVC_file)
+        verts_RA, faces_RA = sp.read_surface(RA_file)
+        verts_X, faces_X = sp.read_surface(X_file)
+        verts_brain, faces_brain = sp.read_surface(brain_file)
+
+        self.hvc = gl.GLMeshItem(vertexes=verts_HVC, faces=faces_HVC,
                                  color=(1, 0, 0, 0.2), smooth=True,
-                                 drawEdges=False, shader='normalColor',
-                                 glOptions='opaque')
+                                 drawEdges=False, shader='balloon',
+                                 glOptions='additive')
 
-        self.outer = gl.GLMeshItem(vertexes=verts2, faces=faces2,
-                                   color=(0, 1, 0, 0.2), smooth=True,
+        self.ra = gl.GLMeshItem(vertexes=verts_RA, faces=faces_RA,
+                                color=(0, 1, 0, 0.2), smooth=True,
+                                drawEdges=False, shader='balloon',
+                                glOptions='additive')
+
+        self.areaX = gl.GLMeshItem(vertexes=verts_X, faces=faces_X,
+                                color=(0, 0, 1, 0.2), smooth=True,
+                                drawEdges=False, shader='balloon',
+                                glOptions='additive')
+
+        self.outer = gl.GLMeshItem(vertexes=verts_brain, faces=faces_brain,
+                                   color=(1, 1, 1, 0.3), smooth=True,
                                    drawEdges=False, shader='normalColor',
                                    glOptions='opaque')
 
         self.addItem(self.outer)
         self.addItem(self.hvc)
+        self.addItem(self.ra)
+        self.addItem(self.areaX)
+
+        print(self.cameraPosition())
+
+        self.setBackgroundColor(50, 50, 50)
 
         # choose center of whole-brain
-        x_center = np.average(verts2[:, 0])
-        y_center = np.average(verts2[:, 1])
-        z_center = np.average(verts2[:, 2])
+        x_center = np.average(verts_brain[:, 0])
+        y_center = np.average(verts_brain[:, 1])
+        z_center = np.average(verts_brain[:, 2])
 
         # set camera settings
-        self.setCameraPosition(distance=1000, elevation=20)
+        self.setCameraPosition(distance=2400, elevation=20)
         # sets center of rotation for field
         new_center = np.array([x_center, y_center, z_center])
         self.opts['center'] = pg.Vector(new_center)
@@ -62,9 +81,9 @@ class brainView(gl.GLViewWidget):
         if isCheckedList[1] is True:
             self.addItem(self.hvc)
         if isCheckedList[2] is True:
-            pass
+            self.addItem(self.areaX)
         if isCheckedList[3] is True:
-            pass
+            self.addItem(self.ra)
 
 
 class BrainRegionChooser(QtWidgets.QWidget):

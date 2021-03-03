@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mbf version="3.0" xmlns="http://www.mbfbioscience.com/2007/neurolucida" xmlns:nl="http://www.mbfbioscience.com/2007/neurolucida" appname="Neurolucida" appversion="9.13 (32-bit)">
+<filefacts>
+<property name="Sections">
+ S1 "Section 1" 0 260 0
+ S2 "Section 2" 260 260 0
+ S3 "Section 3" 520 260 0
+ S4 "Section 4" 780 260 0
+ S5 "Section 5" 1040 260 0
+ S6 "Section 6" 1300 260 0
+ S7 "Section 7" 1560 260 0
+ S8 "Section 8" 1820 260 0
+ S9 "Section 9" 2080 260 0
+ S10 "Section 10" 2340 260 0
+ S11 "Section 11" 2600 260 0
+ S12 "Section 12" 2860 260 0
+ S13 "Section 13" 3120 260 0
+ S14 "Section 14" 3380 260 0
+ S15 "Section 15" 3640 260 0
+ S16 "Section 16" 3900 260 0
+ S17 "Section 17" 4160 260 0
+S18 &quot;Section 18&quot; 4420 260 0</property>
+<property name="SSM">
+&quot;Section 16&quot; 1</property>
+<property name="SSM2">
+1</property>
+</filefacts>
+<image><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im01.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1220.534058" y="691.250366" z="-270.060608"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im02.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1256.184082" y="691.373718" z="270.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im03.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1314.406982" y="657.241089" z="500.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im04.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1281.760254" y="636.465637" z="1080.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im05.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1299.567261" y="657.241028" z="1080.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im06.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1358.925659" y="645.369446" z="1330.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im07.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-666.495605" y="83.879341" z="50.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im08.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-653.883667" y="71.267265" z="1850.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im09.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-701.615051" y="84.375038" z="1850.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im10.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-708.787048" y="67.558975" z="2110.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im11.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-771.113647" y="95.380859" z="2660.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im12.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-768.498779" y="98.230545" z="2940.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im13.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-760.973145" y="116.030899" z="3220.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im14.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-760.973389" y="95.010704" z="3480.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im15.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-767.279175" y="103.418747" z="3750.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im16.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-815.262207" y="72.503448" z="4010.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im17.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1572.616089" y="603.818542" z="4290.000000"/><zspacing>0.000000</zspacing><filename>C:\Documents and Settings\PC User\Desktop\Patrick\atlas\im18.png</filename><channels merge="no"><channel id="red" source="none"/><channel id="green" source="none"/><channel id="blue" source="none"/></channels><scale x="1.470588" y="1.470588"/><coord x="-1569.647949" y="603.818542" z="4540.000000"/><zspacing>0.000000</zspacing></image><contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+670DE2D838454DAC82901F3E03E63D50  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.905409</resolution>  <point x="1355.36" y="-898.55" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1483.20" y="-898.55" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1599.41" y="-950.85" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1669.14" y="-985.71" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1704.01" y="-1026.39" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1747.59" y="-1038.01" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1805.70" y="-1122.26" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1895.77" y="-1244.29" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1919.01" y="-1334.36" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1875.43" y="-1450.58" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1782.45" y="-1523.21" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1698.20" y="-1555.17" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1535.49" y="-1572.60" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1410.56" y="-1572.60" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1285.63" y="-1549.36" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1178.13" y="-1505.78" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1093.87" y="-1470.91" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1024.14" y="-1421.52" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1018.33" y="-1404.09" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="936.98" y="-1345.98" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="881.78" y="-1279.16" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="864.35" y="-1174.56" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="907.93" y="-1069.97" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="983.47" y="-988.62" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1122.93" y="-927.60" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1218.81" y="-913.08" z="-0.06" d="2.91" sid="S1"></point>
+  <point x="1282.72" y="-898.55" z="-0.06" d="2.91" sid="S1"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+B883A3D388EE41D6AECB6173DE80D249  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1403.94" y="-857.49" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1501.88" y="-866.40" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1608.73" y="-902.01" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1638.40" y="-937.63" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1721.51" y="-961.37" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1801.64" y="-1002.92" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1881.77" y="-1074.15" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1967.84" y="-1181.00" z="270.00" d="2.97" sid="S2"></point>
+  <point x="2039.07" y="-1278.94" z="270.00" d="2.97" sid="S2"></point>
+  <point x="2065.78" y="-1344.23" z="270.00" d="2.97" sid="S2"></point>
+  <point x="2071.72" y="-1394.69" z="270.00" d="2.97" sid="S2"></point>
+  <point x="2047.98" y="-1433.27" z="270.00" d="2.97" sid="S2"></point>
+  <point x="2012.36" y="-1507.47" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1863.97" y="-1575.73" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1768.99" y="-1614.31" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1635.44" y="-1599.47" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1490.01" y="-1602.44" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1415.81" y="-1611.34" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1264.45" y="-1578.70" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1148.70" y="-1549.02" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1119.02" y="-1602.44" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1216.96" y="-1655.86" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1291.16" y="-1721.16" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1314.90" y="-1795.36" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1300.06" y="-1878.46" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1213.99" y="-1896.27" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1086.37" y="-1884.39" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1006.24" y="-1842.84" z="270.00" d="2.97" sid="S2"></point>
+  <point x="937.98" y="-1765.68" z="270.00" d="2.97" sid="S2"></point>
+  <point x="914.23" y="-1682.57" z="270.00" d="2.97" sid="S2"></point>
+  <point x="911.26" y="-1629.15" z="270.00" d="2.97" sid="S2"></point>
+  <point x="946.88" y="-1590.57" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1006.24" y="-1575.73" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1074.50" y="-1587.60" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1110.11" y="-1596.51" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1139.79" y="-1546.05" z="270.00" d="2.97" sid="S2"></point>
+  <point x="976.56" y="-1498.56" z="270.00" d="2.97" sid="S2"></point>
+  <point x="875.65" y="-1457.01" z="270.00" d="2.97" sid="S2"></point>
+  <point x="789.58" y="-1379.85" z="270.00" d="2.97" sid="S2"></point>
+  <point x="756.93" y="-1287.84" z="270.00" d="2.97" sid="S2"></point>
+  <point x="783.64" y="-1163.19" z="270.00" d="2.97" sid="S2"></point>
+  <point x="854.87" y="-1068.22" z="270.00" d="2.97" sid="S2"></point>
+  <point x="958.75" y="-973.24" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1089.34" y="-916.85" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1237.74" y="-881.24" z="270.00" d="2.97" sid="S2"></point>
+  <point x="1362.39" y="-863.43" z="270.00" d="2.97" sid="S2"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+DA137DC0F50B4A699C9FF2041680AC6F  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1329.74" y="-830.78" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1484.07" y="-833.75" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1587.95" y="-869.36" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1819.45" y="-1002.92" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1884.74" y="-1047.44" z="500.00" d="2.97" sid="S3"></point>
+  <point x="2021.27" y="-1192.87" z="500.00" d="2.97" sid="S3"></point>
+  <point x="2071.72" y="-1281.91" z="500.00" d="2.97" sid="S3"></point>
+  <point x="2101.40" y="-1382.81" z="500.00" d="2.97" sid="S3"></point>
+  <point x="2074.69" y="-1501.53" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1953.00" y="-1572.76" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1801.64" y="-1641.02" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1635.44" y="-1658.83" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1522.66" y="-1641.02" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1403.94" y="-1605.41" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1208.06" y="-1554.95" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1175.41" y="-1652.90" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1383.16" y="-1715.22" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1445.49" y="-1759.74" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1457.36" y="-1854.71" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1406.91" y="-1952.66" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1288.19" y="-2017.95" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1121.99" y="-2026.85" z="500.00" d="2.97" sid="S3"></point>
+  <point x="976.56" y="-1982.33" z="500.00" d="2.97" sid="S3"></point>
+  <point x="866.75" y="-1893.30" z="500.00" d="2.97" sid="S3"></point>
+  <point x="816.29" y="-1795.36" z="500.00" d="2.97" sid="S3"></point>
+  <point x="801.45" y="-1670.70" z="500.00" d="2.97" sid="S3"></point>
+  <point x="881.58" y="-1569.79" z="500.00" d="2.97" sid="S3"></point>
+  <point x="982.49" y="-1572.76" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1166.51" y="-1643.99" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1199.15" y="-1549.02" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1050.76" y="-1504.50" z="500.00" d="2.97" sid="S3"></point>
+  <point x="896.42" y="-1492.63" z="500.00" d="2.97" sid="S3"></point>
+  <point x="762.87" y="-1439.21" z="500.00" d="2.97" sid="S3"></point>
+  <point x="685.70" y="-1323.46" z="500.00" d="2.97" sid="S3"></point>
+  <point x="721.32" y="-1127.57" z="500.00" d="2.97" sid="S3"></point>
+  <point x="825.19" y="-970.27" z="500.00" d="2.97" sid="S3"></point>
+  <point x="976.56" y="-881.24" z="500.00" d="2.97" sid="S3"></point>
+  <point x="1264.45" y="-839.69" z="500.00" d="2.97" sid="S3"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+394764846762497B8BA1AF3A2A5888E2  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1359.42" y="-839.69" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1519.69" y="-851.56" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1676.99" y="-910.92" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1852.09" y="-999.95" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1979.72" y="-1118.67" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="2074.69" y="-1252.23" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="2128.11" y="-1359.07" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="2145.92" y="-1448.11" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="2101.40" y="-1534.18" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1976.75" y="-1614.31" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1730.41" y="-1706.32" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1688.86" y="-1709.29" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1567.17" y="-1676.64" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1445.49" y="-1643.99" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1288.19" y="-1581.67" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1193.22" y="-1543.08" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1172.44" y="-1581.67" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1353.48" y="-1638.06" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1409.87" y="-1661.80" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1472.20" y="-1753.80" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1478.14" y="-1833.94" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1392.07" y="-1943.75" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1246.64" y="-2012.01" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1089.34" y="-2017.95" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="914.23" y="-1943.75" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="780.68" y="-1786.45" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="745.06" y="-1643.99" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="813.32" y="-1510.44" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="979.53" y="-1519.34" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1157.60" y="-1578.70" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1175.41" y="-1534.18" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1000.30" y="-1492.63" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="822.23" y="-1454.04" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="715.38" y="-1356.10" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="709.45" y="-1201.77" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="756.93" y="-1050.41" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="863.78" y="-925.76" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1056.69" y="-860.46" z="1050.00" d="2.97" sid="S4"></point>
+  <point x="1294.13" y="-845.62" z="1050.00" d="2.97" sid="S4"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+B04EE2C8E0724CAF9748A51BE5768B48  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1329.74" y="-807.04" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1525.62" y="-824.85" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1742.28" y="-902.01" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1893.65" y="-994.02" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="2015.33" y="-1109.77" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="2101.40" y="-1252.23" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="2154.82" y="-1382.81" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="2151.85" y="-1474.82" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="2098.43" y="-1557.92" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1953.00" y="-1617.28" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1706.67" y="-1718.19" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1623.56" y="-1694.45" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1510.78" y="-1664.77" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1249.61" y="-1540.11" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1187.28" y="-1513.40" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1160.57" y="-1578.70" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1344.58" y="-1652.90" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1436.59" y="-1694.45" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1484.07" y="-1798.32" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1436.59" y="-1925.94" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1308.97" y="-1997.17" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1151.67" y="-2041.69" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1018.11" y="-2006.08" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="893.46" y="-1937.82" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="801.45" y="-1822.07" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="730.22" y="-1685.54" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="736.16" y="-1554.95" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="834.10" y="-1451.08" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="958.75" y="-1492.63" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1157.60" y="-1578.70" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1181.34" y="-1507.47" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1065.60" y="-1465.92" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="937.98" y="-1421.40" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="813.32" y="-1394.69" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="736.16" y="-1362.04" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="688.67" y="-1240.35" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="727.25" y="-1086.02" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="848.94" y="-907.95" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1000.30" y="-836.72" z="1050.00" d="2.97" sid="S5"></point>
+  <point x="1240.70" y="-812.97" z="1050.00" d="2.97" sid="S5"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+B3C99DE7ACDB4F12828A8DF7BFDC74ED  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1326.77" y="-801.10" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1567.17" y="-827.81" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1760.09" y="-899.04" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1926.29" y="-1008.86" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="2059.85" y="-1151.32" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="2125.14" y="-1267.07" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="2131.08" y="-1362.04" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="2157.79" y="-1376.88" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="2154.82" y="-1489.66" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="2086.56" y="-1546.05" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1982.68" y="-1581.67" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1831.32" y="-1649.93" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1682.92" y="-1712.25" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1573.11" y="-1682.57" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1513.75" y="-1673.67" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1495.94" y="-1652.90" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1463.30" y="-1652.90" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1308.97" y="-1575.73" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1288.19" y="-1546.05" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1219.93" y="-1540.11" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1175.41" y="-1519.34" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1154.63" y="-1563.86" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1487.04" y="-1700.38" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1522.66" y="-1801.29" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1510.78" y="-1896.27" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1430.65" y="-1958.59" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1311.93" y="-2026.85" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1145.73" y="-2032.79" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="991.40" y="-1979.37" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="863.78" y="-1866.59" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="783.64" y="-1750.84" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="774.74" y="-1614.31" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="828.16" y="-1489.66" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="932.04" y="-1477.79" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1145.73" y="-1557.92" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1163.54" y="-1510.44" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1059.66" y="-1480.76" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="979.53" y="-1448.11" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="840.03" y="-1418.43" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="739.12" y="-1373.91" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="667.89" y="-1308.62" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="644.15" y="-1181.00" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="691.64" y="-1053.38" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="816.29" y="-922.79" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="985.46" y="-824.85" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1148.70" y="-810.01" z="1300.00" d="2.97" sid="S6"></point>
+  <point x="1267.41" y="-804.07" z="1300.00" d="2.97" sid="S6"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+F8D5D0FA9E324F4A959521DF5C6C388A  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1288.19" y="-804.07" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1395.03" y="-812.97" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1492.98" y="-818.91" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1626.53" y="-836.72" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1872.87" y="-955.43" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="2024.23" y="-1091.96" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="2142.95" y="-1270.03" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="2160.76" y="-1353.14" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="2181.53" y="-1468.88" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="2139.98" y="-1560.89" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="2033.14" y="-1617.28" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1944.10" y="-1620.25" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1706.67" y="-1721.16" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1593.89" y="-1724.13" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1498.91" y="-1673.67" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1454.39" y="-1670.70" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1389.10" y="-1611.34" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1279.29" y="-1560.89" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1184.31" y="-1522.31" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1148.70" y="-1578.70" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1353.48" y="-1676.64" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1427.68" y="-1682.57" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1487.04" y="-1756.77" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1490.01" y="-1863.62" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1400.97" y="-1979.37" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1237.74" y="-2044.66" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1044.82" y="-2020.92" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="935.01" y="-1961.56" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="816.29" y="-1851.75" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="745.06" y="-1694.45" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="724.29" y="-1596.51" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="765.84" y="-1474.82" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="848.94" y="-1462.95" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="979.53" y="-1489.66" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1139.79" y="-1575.73" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1178.38" y="-1525.28" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1074.50" y="-1477.79" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="929.07" y="-1430.30" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="774.74" y="-1394.69" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="647.12" y="-1308.62" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="647.12" y="-1192.87" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="730.22" y="-982.15" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="872.68" y="-869.36" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1006.24" y="-830.78" z="1550.00" d="2.97" sid="S7"></point>
+  <point x="1264.45" y="-807.04" z="1550.00" d="2.97" sid="S7"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+41DFBBA38C394004B728E17510128A10  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1338.64" y="-812.97" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1463.30" y="-827.81" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1573.11" y="-833.75" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1641.37" y="-836.72" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1771.96" y="-896.08" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1852.09" y="-943.56" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1988.62" y="-1044.47" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="2095.46" y="-1142.41" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="2151.85" y="-1243.32" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="2217.15" y="-1433.27" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="2187.47" y="-1551.99" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="2107.34" y="-1632.12" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1881.77" y="-1679.61" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1685.89" y="-1756.77" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1623.56" y="-1759.74" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1528.59" y="-1736.00" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1442.52" y="-1643.99" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1323.80" y="-1566.83" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1166.51" y="-1507.47" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1130.89" y="-1584.63" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1308.97" y="-1635.09" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1484.07" y="-1765.68" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1490.01" y="-1857.68" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1389.10" y="-2035.76" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1225.86" y="-2065.44" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1038.88" y="-2020.92" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="920.17" y="-1970.46" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="834.10" y="-1875.49" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="768.80" y="-1753.80" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="730.22" y="-1611.34" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="730.22" y="-1534.18" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="810.35" y="-1483.72" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="976.56" y="-1501.53" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1107.15" y="-1581.67" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1154.63" y="-1501.53" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="973.59" y="-1424.37" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="795.52" y="-1370.94" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="712.41" y="-1335.33" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="667.89" y="-1225.52" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="694.61" y="-1083.06" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="789.58" y="-961.37" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="917.20" y="-863.43" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1113.08" y="-801.10" z="1820.00" d="2.97" sid="S8"></point>
+  <point x="1314.90" y="-810.01" z="1820.00" d="2.97" sid="S8"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+AE8298FCC5E9446BA83794875E7952CF  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1288.19" y="-786.26" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1392.07" y="-807.04" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1528.59" y="-818.91" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1632.47" y="-821.88" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1834.29" y="-919.82" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1979.72" y="-1044.47" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="2092.50" y="-1151.32" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="2199.34" y="-1308.62" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="2237.92" y="-1430.30" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="2178.57" y="-1563.86" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="2077.66" y="-1655.86" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1777.90" y="-1709.29" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1644.34" y="-1750.84" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1519.69" y="-1733.03" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1478.14" y="-1664.77" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1371.29" y="-1557.92" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1353.48" y="-1584.63" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1469.23" y="-1697.41" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1484.07" y="-1768.64" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1504.85" y="-1857.68" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1398.00" y="-2029.82" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1264.45" y="-2062.47" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1089.34" y="-2012.01" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="964.69" y="-1917.04" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="843.00" y="-1804.26" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="786.61" y="-1670.70" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="768.80" y="-1569.79" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="813.32" y="-1468.88" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="917.20" y="-1462.95" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1068.56" y="-1510.44" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1133.86" y="-1566.83" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1246.64" y="-1534.18" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1332.71" y="-1569.79" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1356.45" y="-1551.99" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1276.32" y="-1519.34" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1178.38" y="-1495.60" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1021.08" y="-1448.11" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="911.26" y="-1412.49" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="854.87" y="-1373.91" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="759.90" y="-1335.33" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="694.61" y="-1270.03" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="667.89" y="-1189.90" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="673.83" y="-1056.34" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="765.84" y="-922.79" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="911.26" y="-824.85" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1068.56" y="-765.49" z="2080.00" d="2.97" sid="S9"></point>
+  <point x="1249.61" y="-783.30" z="2080.00" d="2.97" sid="S9"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+2F542B45008F4243AB481A159B55354B  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1350.52" y="-765.49" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1534.53" y="-804.07" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1632.47" y="-804.07" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1881.77" y="-928.72" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="2086.56" y="-1139.45" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="2214.18" y="-1311.58" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="2252.76" y="-1424.37" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="2211.21" y="-1572.76" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="2122.18" y="-1676.64" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1896.61" y="-1694.45" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1626.53" y="-1759.74" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1507.82" y="-1679.61" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1421.75" y="-1551.99" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1335.68" y="-1451.08" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1314.90" y="-1504.50" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1389.10" y="-1572.76" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1463.30" y="-1667.74" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1507.82" y="-1762.71" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1487.04" y="-1807.23" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1498.91" y="-1893.30" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1442.52" y="-1943.75" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1338.64" y="-2038.73" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1181.34" y="-2038.73" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="994.37" y="-1922.98" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="994.37" y="-1881.43" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="881.58" y="-1798.32" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="789.58" y="-1664.77" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="780.68" y="-1534.18" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="896.42" y="-1445.14" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1053.72" y="-1513.40" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1276.32" y="-1498.56" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1306.00" y="-1451.08" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1181.34" y="-1445.14" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1116.05" y="-1454.04" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1018.11" y="-1430.30" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="905.33" y="-1400.62" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="813.32" y="-1329.39" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="727.25" y="-1213.64" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="691.64" y="-1169.12" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="706.48" y="-1074.15" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="759.90" y="-937.63" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="920.17" y="-801.10" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1148.70" y="-771.42" z="2080.00" d="2.97" sid="S10"></point>
+  <point x="1297.09" y="-771.42" z="2080.00" d="2.97" sid="S10"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+5991B17F9BE54CD0BB2A9EC8D69E3907  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1175.41" y="-732.84" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1303.03" y="-726.90" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1498.91" y="-777.36" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1632.47" y="-801.10" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1745.25" y="-842.65" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1926.29" y="-970.27" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="2074.69" y="-1109.77" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="2217.15" y="-1326.42" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="2237.92" y="-1462.95" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="2202.31" y="-1560.89" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="2113.27" y="-1673.67" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1902.55" y="-1688.51" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1671.05" y="-1756.77" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1543.43" y="-1741.93" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1504.85" y="-1694.45" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1481.10" y="-1816.13" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1415.81" y="-1914.07" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1335.68" y="-1988.27" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1231.80" y="-1991.24" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1139.79" y="-1955.62" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1086.37" y="-1931.88" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1089.34" y="-1866.59" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="929.07" y="-1931.88" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="878.62" y="-1943.75" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="783.64" y="-1884.39" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="694.61" y="-1768.64" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="653.06" y="-1667.74" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="647.12" y="-1563.86" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="566.99" y="-1546.05" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="549.18" y="-1507.47" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="480.92" y="-1495.60" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="469.04" y="-1454.04" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="480.92" y="-1388.75" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="555.11" y="-1376.88" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="602.60" y="-1373.91" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="653.06" y="-1296.75" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="721.32" y="-1326.42" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="768.80" y="-1356.10" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="819.26" y="-1394.69" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="943.91" y="-1412.49" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="991.40" y="-1448.11" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1068.56" y="-1430.30" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="988.43" y="-1397.65" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="884.55" y="-1370.94" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="768.80" y="-1255.19" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="712.41" y="-1178.03" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="712.41" y="-1068.22" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="742.09" y="-946.53" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="819.26" y="-827.81" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="940.94" y="-753.62" z="2590.00" d="2.97" sid="S11"></point>
+  <point x="1098.24" y="-738.78" z="2590.00" d="2.97" sid="S11"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+C5C0FE0D03DF4202BD73C98610AE8861  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1288.19" y="-723.94" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1540.46" y="-783.30" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1739.31" y="-830.78" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1926.29" y="-964.34" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="2107.34" y="-1127.57" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="2240.89" y="-1350.17" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="2255.73" y="-1459.98" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="2237.92" y="-1566.83" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="2083.59" y="-1685.54" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1970.81" y="-1691.48" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1727.44" y="-1736.00" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1626.53" y="-1759.74" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1555.30" y="-1733.03" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1510.78" y="-1697.41" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1504.85" y="-1768.64" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1475.17" y="-1866.59" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1395.03" y="-1937.82" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1320.84" y="-1991.24" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1219.93" y="-1964.53" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1157.60" y="-1920.01" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1092.31" y="-1979.37" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="982.49" y="-2050.60" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="881.58" y="-2026.85" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="774.74" y="-2017.95" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="656.02" y="-2023.89" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="558.08" y="-1943.75" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="549.18" y="-1836.91" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="564.02" y="-1792.39" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="641.18" y="-1801.29" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="691.64" y="-1789.42" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="647.12" y="-1747.87" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="650.09" y="-1673.67" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="564.02" y="-1673.67" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="564.02" y="-1611.34" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="480.92" y="-1617.28" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="469.04" y="-1546.05" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="474.98" y="-1445.14" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="561.05" y="-1376.88" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="611.50" y="-1329.39" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="608.54" y="-1273.00" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="537.31" y="-1198.80" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="510.59" y="-1136.48" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="510.59" y="-1065.25" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="561.05" y="-1062.28" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="596.66" y="-1050.41" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="614.47" y="-1026.66" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="650.09" y="-1017.76" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="700.54" y="-1017.76" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="739.12" y="-1017.76" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="762.87" y="-1020.73" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="765.84" y="-1074.15" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="768.80" y="-1183.96" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="780.68" y="-1243.32" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="813.32" y="-1252.23" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="822.23" y="-1231.45" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="810.35" y="-1192.87" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="801.45" y="-1124.61" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="804.42" y="-1071.18" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="795.52" y="-1029.63" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="765.84" y="-985.11" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="765.84" y="-940.59" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="780.68" y="-866.40" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="807.39" y="-818.91" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="845.97" y="-804.07" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="887.52" y="-783.30" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="940.94" y="-756.58" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="994.37" y="-753.62" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1116.05" y="-732.84" z="2860.00" d="2.97" sid="S12"></point>
+  <point x="1255.54" y="-718.00" z="2860.00" d="2.97" sid="S12"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+16FEE67B666741C38EB1B5EA4827A27A  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1294.13" y="-723.94" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1573.11" y="-765.49" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1837.25" y="-878.27" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="2080.62" y="-1050.41" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="2205.28" y="-1219.58" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="2297.28" y="-1406.56" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="2282.44" y="-1557.92" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="2181.53" y="-1641.02" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="2065.78" y="-1679.61" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1887.71" y="-1700.38" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1706.67" y="-1750.84" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1596.85" y="-1759.74" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1561.24" y="-1718.19" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1558.27" y="-1828.00" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1490.01" y="-1830.97" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1469.23" y="-1881.43" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1466.27" y="-1905.17" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1418.78" y="-1908.14" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1362.39" y="-1920.01" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1261.48" y="-1946.72" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1202.12" y="-1937.82" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1124.95" y="-2035.76" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1047.79" y="-2062.47" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="985.46" y="-2118.86" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="878.62" y="-2104.02" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="807.39" y="-2109.96" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="751.00" y="-2142.60" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="667.89" y="-2124.79" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="599.63" y="-2106.99" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="540.27" y="-2059.50" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="498.72" y="-1988.27" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="492.79" y="-1949.69" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="489.82" y="-1902.20" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="486.85" y="-1839.87" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="575.89" y="-1777.55" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="632.28" y="-1792.39" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="629.31" y="-1741.93" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="525.43" y="-1741.93" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="578.86" y="-1623.22" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="528.40" y="-1643.99" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="507.63" y="-1691.48" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="448.27" y="-1691.48" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="427.49" y="-1641.02" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="397.81" y="-1596.51" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="397.81" y="-1549.02" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="418.59" y="-1495.60" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="436.40" y="-1486.69" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="457.17" y="-1483.72" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="480.92" y="-1430.30" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="486.85" y="-1424.37" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="522.47" y="-1418.43" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="525.43" y="-1385.78" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="501.69" y="-1365.01" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="442.33" y="-1338.30" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="409.69" y="-1308.62" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="403.75" y="-1278.94" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="403.75" y="-1258.16" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="427.49" y="-1237.39" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="433.43" y="-1219.58" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="415.62" y="-1189.90" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="415.62" y="-1157.25" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="415.62" y="-1124.61" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="439.36" y="-1103.83" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="454.20" y="-1086.02" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="466.08" y="-1080.09" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="495.76" y="-1071.18" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="513.56" y="-1062.28" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="534.34" y="-1044.47" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="561.05" y="-988.08" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="584.79" y="-970.27" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="593.70" y="-967.31" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="599.63" y="-976.21" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="623.38" y="-976.21" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="638.22" y="-979.18" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="658.99" y="-976.21" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="694.61" y="-970.27" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="718.35" y="-964.34" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="730.22" y="-964.34" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="736.16" y="-996.99" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="739.12" y="-1008.86" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="759.90" y="-1035.57" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="771.77" y="-1083.06" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="765.84" y="-1121.64" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="762.87" y="-1145.38" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="777.71" y="-1166.16" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="795.52" y="-1172.09" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="801.45" y="-1178.03" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="816.29" y="-1198.80" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="825.19" y="-1222.55" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="828.16" y="-1246.29" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="828.16" y="-1275.97" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="828.16" y="-1284.87" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="828.16" y="-1320.49" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="884.55" y="-1329.39" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="917.20" y="-1329.39" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="935.01" y="-1347.20" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="937.98" y="-1373.91" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="943.91" y="-1412.49" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="926.10" y="-1442.17" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="923.14" y="-1451.08" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="973.59" y="-1451.08" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="994.37" y="-1451.08" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1018.11" y="-1409.53" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1035.92" y="-1373.91" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1056.69" y="-1367.98" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1041.85" y="-1365.01" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="988.43" y="-1359.07" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="955.78" y="-1332.36" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="914.23" y="-1302.68" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="875.65" y="-1273.00" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="860.81" y="-1234.42" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="857.84" y="-1198.80" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="851.91" y="-1172.09" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="837.07" y="-1077.12" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="837.07" y="-1047.44" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="834.10" y="-999.95" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="810.35" y="-961.37" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="783.64" y="-925.76" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="765.84" y="-893.11" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="762.87" y="-857.49" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="771.77" y="-821.88" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="813.32" y="-783.30" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="840.03" y="-762.52" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="932.04" y="-753.62" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="997.33" y="-744.71" z="3120.00" d="2.97" sid="S13"></point>
+  <point x="1261.48" y="-726.90" z="3120.00" d="2.97" sid="S13"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+F1DB74D765184D1FA76A3777B9628ACF  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1208.06" y="-715.03" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1430.65" y="-732.84" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1668.08" y="-789.23" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1905.52" y="-916.85" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="2160.76" y="-1157.25" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="2279.47" y="-1391.72" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="2291.35" y="-1563.86" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="2249.80" y="-1706.32" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="2071.72" y="-1759.74" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1953.00" y="-1733.03" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1754.15" y="-1768.64" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1659.18" y="-1783.48" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1573.11" y="-1744.90" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1510.78" y="-1860.65" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1430.65" y="-1922.98" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1231.80" y="-1946.72" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1145.73" y="-2077.31" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="988.43" y="-2166.35" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="774.74" y="-2169.31" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="667.89" y="-2160.41" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="561.05" y="-2086.21" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="469.04" y="-1982.33" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="472.01" y="-1866.59" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="507.63" y="-1753.80" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="433.43" y="-1700.38" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="406.72" y="-1632.12" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="403.75" y="-1549.02" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="421.56" y="-1519.34" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="421.56" y="-1483.72" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="463.11" y="-1427.33" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="472.01" y="-1397.65" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="457.17" y="-1367.98" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="400.78" y="-1338.30" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="362.20" y="-1311.58" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="359.23" y="-1287.84" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="368.13" y="-1252.23" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="368.13" y="-1225.52" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="382.97" y="-1186.93" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="397.81" y="-1166.16" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="439.36" y="-1189.90" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="433.43" y="-1145.38" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="433.43" y="-1091.96" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="436.40" y="-1068.22" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="469.04" y="-1056.34" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="486.85" y="-1047.44" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="513.56" y="-1044.47" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="525.43" y="-1056.34" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="599.63" y="-1124.61" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="543.24" y="-1008.86" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="561.05" y="-946.53" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="658.99" y="-937.63" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="697.57" y="-931.69" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="762.87" y="-928.72" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="804.42" y="-928.72" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="822.23" y="-931.69" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="822.23" y="-973.24" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="825.19" y="-1050.41" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="825.19" y="-1112.73" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="837.07" y="-1139.45" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="854.87" y="-1181.00" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="869.71" y="-1222.55" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="893.46" y="-1270.03" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1024.04" y="-1341.26" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1027.01" y="-1394.69" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1065.60" y="-1388.75" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1056.69" y="-1338.30" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1009.21" y="-1293.78" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="970.62" y="-1275.97" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="935.01" y="-1240.35" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="923.14" y="-1192.87" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="920.17" y="-1157.25" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="914.23" y="-1115.70" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="878.62" y="-1053.38" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="872.68" y="-1011.82" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="872.68" y="-970.27" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="863.78" y="-928.72" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="845.97" y="-878.27" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="828.16" y="-827.81" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="843.00" y="-786.26" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="890.49" y="-771.42" z="3390.00" d="2.97" sid="S14"></point>
+  <point x="1136.83" y="-715.03" z="3390.00" d="2.97" sid="S14"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+C59228FB17794283AE5483661753F8AF  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1145.73" y="-747.68" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1371.29" y="-768.46" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1596.85" y="-821.88" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1893.65" y="-952.47" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="2166.69" y="-1204.74" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="2249.80" y="-1394.69" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="2291.35" y="-1581.67" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="2240.89" y="-1736.00" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="2089.53" y="-1789.42" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1923.32" y="-1771.61" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1754.15" y="-1810.20" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1617.63" y="-1816.13" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1558.27" y="-1786.45" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1537.50" y="-1866.59" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1415.81" y="-1920.01" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1317.87" y="-1940.78" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1216.96" y="-1934.85" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1151.67" y="-2083.24" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1015.14" y="-2181.19" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="679.77" y="-2190.09" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="561.05" y="-2178.22" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="516.53" y="-2101.05" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="504.66" y="-2044.66" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="474.98" y="-1985.30" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="433.43" y="-1931.88" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="415.62" y="-1890.33" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="415.62" y="-1866.59" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="412.65" y="-1830.97" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="451.24" y="-1786.45" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="385.94" y="-1741.93" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="332.52" y="-1682.57" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="320.65" y="-1646.96" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="326.58" y="-1605.41" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="344.39" y="-1581.67" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="344.39" y="-1531.21" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="356.26" y="-1498.56" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="377.04" y="-1468.88" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="382.97" y="-1454.04" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="374.07" y="-1433.27" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="356.26" y="-1397.65" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="344.39" y="-1353.14" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="314.71" y="-1323.46" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="308.78" y="-1302.68" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="308.78" y="-1270.03" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="308.78" y="-1252.23" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="308.78" y="-1210.68" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="314.71" y="-1178.03" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="332.52" y="-1160.22" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="362.20" y="-1139.45" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="377.04" y="-1106.80" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="406.72" y="-1059.31" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="460.14" y="-1026.66" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="495.76" y="-1017.76" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="549.18" y="-1002.92" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="611.50" y="-976.21" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="638.22" y="-961.37" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="697.57" y="-937.63" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="759.90" y="-922.79" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="780.68" y="-922.79" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="804.42" y="-922.79" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="825.19" y="-940.59" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="825.19" y="-1002.92" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="828.16" y="-1068.22" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="831.13" y="-1148.35" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="845.97" y="-1189.90" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="860.81" y="-1210.68" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="899.39" y="-1225.52" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="940.94" y="-1293.78" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="967.65" y="-1302.68" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1000.30" y="-1326.42" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1009.21" y="-1335.33" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1047.79" y="-1335.33" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1071.53" y="-1332.36" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1053.72" y="-1299.71" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1012.17" y="-1270.03" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="967.65" y="-1237.39" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="923.14" y="-1201.77" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="887.52" y="-1151.32" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="884.55" y="-1091.96" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="884.55" y="-1032.60" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="881.58" y="-982.15" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="860.81" y="-896.08" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="848.94" y="-866.40" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="851.91" y="-839.69" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="863.78" y="-815.94" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="884.55" y="-798.13" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="923.14" y="-783.30" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="991.40" y="-753.62" z="3640.00" d="2.97" sid="S15"></point>
+  <point x="1068.56" y="-744.71" z="3640.00" d="2.97" sid="S15"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="false" style="solid">
+  <property name="GUID">
+AF9B4E9DB63B4E479460FF59EA89159F  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1136.83" y="-754.68" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1249.61" y="-762.52" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1448.46" y="-845.62" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1694.79" y="-940.59" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1896.61" y="-1008.86" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="2050.95" y="-1186.93" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="2178.57" y="-1403.59" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="2229.02" y="-1652.90" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="2053.91" y="-1887.36" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1982.68" y="-1890.33" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1801.64" y="-1833.94" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1694.79" y="-1842.84" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1576.08" y="-1833.94" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1543.43" y="-1825.03" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1519.69" y="-1804.26" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1490.01" y="-1798.32" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1487.04" y="-1857.68" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1484.07" y="-1922.98" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1445.49" y="-1946.72" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1341.61" y="-1949.69" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1276.32" y="-1988.27" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1193.22" y="-1949.69" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1163.54" y="-1899.23" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1127.92" y="-1884.39" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1121.99" y="-1937.82" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1015.14" y="-2115.89" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="929.07" y="-2142.60" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="825.19" y="-2151.51" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="676.80" y="-2198.99" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="578.86" y="-2196.02" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="477.95" y="-2142.60" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="406.72" y="-2074.34" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="368.13" y="-2012.01" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="368.13" y="-1946.72" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="335.49" y="-1899.23" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="261.29" y="-1881.43" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="207.87" y="-1884.39" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="160.38" y="-1890.33" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="118.83" y="-1872.52" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="83.21" y="-1836.91" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="74.31" y="-1774.58" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="74.31" y="-1730.06" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="98.05" y="-1724.13" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="151.48" y="-1721.16" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="201.93" y="-1718.19" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="252.39" y="-1709.29" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="290.97" y="-1694.45" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="290.97" y="-1641.02" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="267.23" y="-1617.28" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="252.39" y="-1575.73" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="252.39" y="-1531.21" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="255.35" y="-1486.69" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="255.35" y="-1436.24" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="252.39" y="-1394.69" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="228.64" y="-1341.26" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="193.03" y="-1305.65" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="181.16" y="-1255.19" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="219.74" y="-1234.42" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="382.97" y="-1267.07" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="457.17" y="-1341.26" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="371.10" y="-1228.48" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="252.39" y="-1189.90" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="228.64" y="-1145.38" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="231.61" y="-1106.80" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="243.48" y="-1068.22" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="302.84" y="-1023.70" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="326.58" y="-1020.73" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="359.23" y="-1017.76" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="371.10" y="-985.11" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="412.65" y="-940.59" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="448.27" y="-925.76" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="474.98" y="-919.82" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="549.18" y="-890.14" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="564.02" y="-869.36" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="650.09" y="-857.49" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="682.73" y="-857.49" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="721.32" y="-842.65" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="748.03" y="-824.85" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="792.55" y="-818.91" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="834.10" y="-845.62" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="837.07" y="-857.49" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="857.84" y="-866.40" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="878.62" y="-866.40" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="917.20" y="-839.69" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="926.10" y="-815.94" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="940.86" y="-789.18" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="949.85" y="-771.42" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1061.84" y="-756.05" z="3910.00" d="12.24" sid="S16"></point>
+  <point x="1107.20" y="-752.55" z="3910.00" d="12.24" sid="S16"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+3501A5E4B3C04A06A09BA26025711A02  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1139.79" y="-747.68" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1338.64" y="-780.33" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1534.53" y="-875.30" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1941.13" y="-1094.93" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="2062.82" y="-1290.81" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="2151.85" y="-1540.11" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="2137.01" y="-1753.80" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="2027.20" y="-1920.01" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1994.55" y="-1940.78" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1920.36" y="-1928.91" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1834.29" y="-1896.27" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1774.93" y="-1851.75" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1736.35" y="-1839.87" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1679.96" y="-1833.94" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1614.66" y="-1833.94" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1555.30" y="-1813.16" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1501.88" y="-1813.16" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1466.27" y="-1828.00" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1492.98" y="-1863.62" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1534.53" y="-1949.69" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1504.85" y="-2020.92" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1498.91" y="-2086.21" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1457.36" y="-2124.79" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1371.29" y="-2083.24" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1282.25" y="-2071.37" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1255.54" y="-2029.82" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1240.70" y="-2006.08" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1213.99" y="-1988.27" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1211.02" y="-1979.37" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1202.12" y="-1964.53" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1175.41" y="-1955.62" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1145.73" y="-1943.75" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1139.79" y="-1928.91" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1127.92" y="-1920.01" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1119.02" y="-1896.27" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1116.05" y="-1884.39" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1110.11" y="-1866.59" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1095.28" y="-1863.62" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1092.31" y="-1914.07" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1035.92" y="-1979.37" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="991.40" y="-2056.53" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="899.39" y="-2118.86" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="748.03" y="-2148.54" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="647.12" y="-2142.60" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="581.82" y="-2121.83" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="516.53" y="-2065.44" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="477.95" y="-2017.95" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="469.04" y="-1970.46" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="466.08" y="-1943.75" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="439.36" y="-1920.01" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="415.62" y="-1896.27" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="380.01" y="-1878.46" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="338.46" y="-1866.59" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="279.10" y="-1860.65" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="243.48" y="-1896.27" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="157.41" y="-1928.91" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="112.89" y="-1917.04" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="112.89" y="-1881.43" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="112.89" y="-1857.68" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="109.93" y="-1828.00" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="103.99" y="-1804.26" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="98.05" y="-1777.55" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="98.05" y="-1753.80" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="115.86" y="-1738.97" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="145.54" y="-1733.03" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="181.16" y="-1727.09" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="210.84" y="-1715.22" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="225.67" y="-1700.38" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="249.42" y="-1679.61" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="276.13" y="-1673.67" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="285.03" y="-1658.83" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="267.23" y="-1632.12" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="246.45" y="-1602.44" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="225.67" y="-1566.83" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="222.71" y="-1543.08" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="219.74" y="-1522.31" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="219.74" y="-1504.50" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="219.74" y="-1477.79" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="219.74" y="-1439.21" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="225.67" y="-1409.53" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="234.58" y="-1376.88" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="243.48" y="-1344.23" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="261.29" y="-1329.39" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="246.45" y="-1296.75" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="237.55" y="-1273.00" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="231.61" y="-1237.39" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="231.61" y="-1201.77" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="237.55" y="-1145.38" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="237.55" y="-1109.77" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="255.35" y="-1080.09" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="279.10" y="-1056.34" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="279.10" y="-1029.63" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="308.78" y="-979.18" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="341.42" y="-958.40" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="368.13" y="-934.66" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="409.69" y="-907.95" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="451.24" y="-887.17" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="501.69" y="-872.33" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="537.31" y="-863.43" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="575.89" y="-851.56" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="602.60" y="-833.75" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="620.41" y="-824.85" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="667.89" y="-824.85" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="724.29" y="-824.85" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="762.87" y="-821.88" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="810.35" y="-815.94" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="822.23" y="-815.94" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="863.78" y="-869.36" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="869.71" y="-973.24" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="890.49" y="-1071.18" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="961.72" y="-1204.74" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="964.69" y="-1172.09" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="964.69" y="-1071.18" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="952.81" y="-982.15" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="943.91" y="-878.27" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="937.98" y="-798.13" z="4180.00" d="2.97" sid="S17"></point>
+  <point x="1098.24" y="-753.62" z="4180.00" d="2.97" sid="S17"></point>
+</contour>
+<contour name="Dendritic extension" color="#0000FF" closed="true" style="solid">
+  <property name="GUID">
+B7C9CEB341A4478DA8B9B9FB41F1168A  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.967920</resolution>  <point x="1145.73" y="-833.75" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1258.51" y="-836.72" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1463.30" y="-919.82" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1665.12" y="-988.08" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1908.48" y="-1151.32" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="2062.82" y="-1359.07" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="2110.30" y="-1560.89" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="2125.14" y="-1685.54" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="2065.78" y="-1899.23" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1947.07" y="-1896.27" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1861.00" y="-1851.75" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1804.61" y="-1836.91" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1736.35" y="-1822.07" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1662.15" y="-1816.13" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1614.66" y="-1810.20" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1555.30" y="-1798.32" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1504.85" y="-1783.48" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1495.94" y="-1780.52" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1534.53" y="-1863.62" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1564.21" y="-1937.82" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1516.72" y="-2038.73" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1433.62" y="-2053.56" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1359.42" y="-2056.53" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1291.16" y="-2026.85" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1264.45" y="-1973.43" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1246.64" y="-2006.08" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1225.86" y="-1928.91" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1193.22" y="-1928.91" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1145.73" y="-1925.94" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1133.86" y="-1917.04" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1121.99" y="-1899.23" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1104.18" y="-1807.23" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1092.31" y="-1928.91" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="991.40" y="-2026.85" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="881.58" y="-2115.89" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="751.00" y="-2166.35" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="623.38" y="-2145.57" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="510.59" y="-2089.18" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="460.14" y="-1973.43" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="451.24" y="-1917.04" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="397.81" y="-1860.65" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="302.84" y="-1863.62" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="225.67" y="-1955.62" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="169.28" y="-1967.50" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="127.73" y="-1905.17" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="112.89" y="-1839.87" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="121.80" y="-1795.36" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="181.16" y="-1774.58" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="213.80" y="-1762.71" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="246.45" y="-1721.16" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="246.45" y="-1700.38" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="296.90" y="-1697.41" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="394.85" y="-1697.41" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="264.26" y="-1620.25" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="231.61" y="-1537.15" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="246.45" y="-1397.65" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="258.32" y="-1284.87" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="231.61" y="-1160.22" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="273.16" y="-1044.47" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="374.07" y="-952.47" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="543.24" y="-881.24" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="629.31" y="-824.85" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="727.25" y="-821.88" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="825.19" y="-810.01" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="866.75" y="-893.11" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="887.52" y="-1032.60" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="920.17" y="-931.69" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="982.49" y="-830.78" z="4430.00" d="2.97" sid="S18"></point>
+  <point x="1095.28" y="-830.78" z="4430.00" d="2.97" sid="S18"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+BC14EAD42C8740B7821AAE71A56A3388  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1016.27" y="-787.36" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1020.47" y="-802.07" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="997.35" y="-835.70" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="961.62" y="-873.54" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="921.68" y="-902.97" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="890.15" y="-919.78" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="867.02" y="-919.78" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="879.64" y="-877.74" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="900.66" y="-829.40" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="934.29" y="-808.38" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="980.53" y="-791.56" z="2940.00" d="2.10" sid="S12"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+0032D42564DF497FA4C1ACE38C2E94B7  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1003.66" y="-785.25" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1001.55" y="-802.07" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="965.82" y="-827.29" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="938.49" y="-856.72" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="915.37" y="-894.56" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="896.45" y="-951.31" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="888.04" y="-1005.97" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="873.33" y="-1022.78" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="871.23" y="-987.05" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="881.74" y="-949.21" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="892.25" y="-888.25" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="909.07" y="-852.52" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="932.19" y="-820.99" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="972.13" y="-793.66" z="3220.00" d="2.10" sid="S13"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+A32CC88AB4FB426EB1B30C9191260971  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="986.84" y="-835.70" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="988.94" y="-854.62" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="970.02" y="-877.74" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="953.21" y="-907.17" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="940.60" y="-947.11" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="921.68" y="-984.95" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="915.37" y="-945.01" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="938.49" y="-886.15" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="957.41" y="-852.52" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="974.23" y="-837.80" z="3480.00" d="2.10" sid="S14"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+DED58731040144E2866345226EA431FE  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="923.78" y="-909.27" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="932.19" y="-917.68" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="927.98" y="-938.70" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="915.37" y="-940.80" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="915.37" y="-917.68" z="3750.00" d="2.10" sid="S15"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+779E445C15FB4C75B99D0B20D62F87D3  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="957.41" y="-781.05" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="982.64" y="-774.74" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1024.68" y="-774.74" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1060.41" y="-778.95" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1058.31" y="-804.17" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1020.47" y="-833.60" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="976.33" y="-852.52" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="927.98" y="-867.23" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="898.55" y="-865.13" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="873.33" y="-863.03" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="892.25" y="-823.09" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="930.09" y="-791.56" z="2660.00" d="2.10" sid="S11"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+9D84BD72A4744F7087B7D823ED9DD637  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1012.06" y="-799.97" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1062.51" y="-799.97" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1125.57" y="-806.27" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1123.47" y="-829.40" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1087.74" y="-863.03" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1024.68" y="-886.15" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="963.72" y="-884.05" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="911.17" y="-873.54" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="909.07" y="-858.82" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="923.78" y="-837.80" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="986.84" y="-804.17" z="2110.00" d="2.10" sid="S10"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+9D729682F497455A817D1713DA941064  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1068.82" y="-789.46" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1106.65" y="-789.46" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1150.80" y="-797.87" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1182.33" y="-808.38" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1182.33" y="-839.91" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1152.90" y="-860.93" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1094.04" y="-873.54" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1045.70" y="-867.23" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="999.45" y="-863.03" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="970.02" y="-854.62" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="957.41" y="-825.19" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1012.06" y="-804.17" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="1049.90" y="-789.46" z="1850.00" d="2.10" sid="S9"></point>
+</contour>
+<contour name="RA" color="#FF8000" closed="true" style="solid">
+  <property name="GUID">
+381693C9A08044BF95F440314CBBA352  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="850.21" y="-1167.82" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="900.66" y="-1174.13" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="938.49" y="-1199.35" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="957.41" y="-1243.49" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="934.29" y="-1285.53" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="875.43" y="-1283.43" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="835.49" y="-1264.51" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="814.47" y="-1232.98" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="812.37" y="-1205.66" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="820.78" y="-1172.03" z="1850.00" d="2.10" sid="S9"></point>
+  <point x="843.90" y="-1165.72" z="1850.00" d="2.10" sid="S9"></point>
+</contour>
+<contour name="RA" color="#FF8000" closed="true" style="solid">
+  <property name="GUID">
+FA4500B0692C488DB6F227F29C8CED26  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="913.27" y="-1201.45" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="938.49" y="-1211.96" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="967.92" y="-1243.49" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="970.02" y="-1277.13" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="921.68" y="-1275.02" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="888.04" y="-1264.51" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="879.64" y="-1232.98" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="888.04" y="-1203.56" z="1850.00" d="2.10" sid="S8"></point>
+</contour>
+<contour name="HVC L" color="#FF0000" closed="true" style="solid">
+  <property name="GUID">
+769224CB5E9C4BEB94BEB3280B9B96BF  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1125.57" y="-820.99" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1167.61" y="-818.89" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1213.86" y="-833.60" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1218.06" y="-860.93" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1190.74" y="-884.05" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1123.47" y="-886.15" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1077.23" y="-884.05" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1047.80" y="-858.82" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1066.72" y="-833.60" z="1850.00" d="2.10" sid="S8"></point>
+  <point x="1098.25" y="-825.19" z="1850.00" d="2.10" sid="S8"></point>
+</contour>
+<contour name="RA" color="#FF8000" closed="true" style="solid">
+  <property name="GUID">
+CC38691BCA4B4F0B9F90A2AAF8C1CAA9  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="835.49" y="-1190.94" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="879.64" y="-1201.45" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="915.37" y="-1235.09" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="936.39" y="-1266.62" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="932.19" y="-1302.35" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="881.74" y="-1306.55" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="831.29" y="-1300.25" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="793.45" y="-1277.13" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="782.94" y="-1239.29" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="801.86" y="-1195.15" z="2110.00" d="2.10" sid="S10"></point>
+</contour>
+<contour name="Area X" color="#FF04FF" closed="true" style="solid">
+  <property name="GUID">
+1820914E55734E0D8CBD9CC850A6D604  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1686.81" y="-1434.78" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1728.85" y="-1441.08" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1754.08" y="-1472.61" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1756.18" y="-1523.06" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1735.16" y="-1560.90" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1684.71" y="-1560.90" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1642.67" y="-1527.27" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1630.06" y="-1483.12" z="2110.00" d="2.10" sid="S10"></point>
+  <point x="1651.08" y="-1443.19" z="2110.00" d="2.10" sid="S10"></point>
+</contour>
+<contour name="Area X" color="#FF04FF" closed="true" style="solid">
+  <property name="GUID">
+EB0AD64437594A6EA2E7F2CB80A47B42  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1670.00" y="-1371.72" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1712.04" y="-1369.61" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1754.08" y="-1405.35" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1789.81" y="-1445.29" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1785.61" y="-1499.94" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1747.77" y="-1548.29" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1678.40" y="-1565.10" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1606.94" y="-1556.69" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1581.71" y="-1510.45" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1577.51" y="-1441.08" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="1636.36" y="-1380.13" z="2660.00" d="2.10" sid="S11"></point>
+</contour>
+<contour name="RA" color="#FF8000" closed="true" style="solid">
+  <property name="GUID">
+89728C20EA2A486B85F8CFD9B019861B  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="812.37" y="-1182.54" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="860.72" y="-1203.56" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="871.23" y="-1230.88" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="848.11" y="-1247.70" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="801.86" y="-1245.60" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="780.84" y="-1228.78" z="2660.00" d="2.10" sid="S11"></point>
+  <point x="780.84" y="-1199.35" z="2660.00" d="2.10" sid="S11"></point>
+</contour>
+<contour name="Area X" color="#FF04FF" closed="true" style="solid">
+  <property name="GUID">
+091E871BB48B4BBA93760D9E8510A909  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1665.79" y="-1346.49" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1712.04" y="-1359.10" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1758.28" y="-1390.64" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1802.42" y="-1426.37" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1819.24" y="-1468.41" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1823.44" y="-1514.65" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1802.42" y="-1558.80" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1766.69" y="-1588.22" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1709.93" y="-1586.12" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1653.18" y="-1575.61" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1611.14" y="-1544.08" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1592.22" y="-1502.04" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1590.12" y="-1434.78" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1611.14" y="-1373.82" z="2940.00" d="2.10" sid="S12"></point>
+  <point x="1634.26" y="-1354.90" z="2940.00" d="2.10" sid="S12"></point>
+</contour>
+<contour name="Area X" color="#FF04FF" closed="true" style="solid">
+  <property name="GUID">
+2631BB6E16AC41AFBC18010673157100  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1701.53" y="-1306.55" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1762.48" y="-1308.66" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1815.04" y="-1342.29" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1857.08" y="-1380.13" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1878.10" y="-1432.68" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1863.38" y="-1489.43" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1815.04" y="-1527.27" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1779.30" y="-1556.69" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1705.73" y="-1560.90" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1644.77" y="-1544.08" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1615.34" y="-1472.61" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1617.45" y="-1386.43" z="3220.00" d="2.10" sid="S13"></point>
+  <point x="1665.79" y="-1317.06" z="3220.00" d="2.10" sid="S13"></point>
+</contour>
+<contour name="Area X" color="#FF04FF" closed="true" style="solid">
+  <property name="GUID">
+A4928DCA13EE44DA90BEEA3FAE4469D1  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1657.38" y="-1317.06" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1701.53" y="-1319.17" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1739.36" y="-1348.59" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1806.63" y="-1386.43" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1848.67" y="-1441.08" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1873.89" y="-1485.23" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1861.28" y="-1537.78" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1812.93" y="-1575.61" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1760.38" y="-1600.84" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1680.51" y="-1594.53" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1646.87" y="-1554.59" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1642.67" y="-1499.94" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1644.77" y="-1434.78" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1640.57" y="-1369.61" z="3480.00" d="2.10" sid="S14"></point>
+  <point x="1636.36" y="-1342.29" z="3480.00" d="2.10" sid="S14"></point>
+</contour>
+<contour name="Area X" color="#FF04FF" closed="true" style="solid">
+  <property name="GUID">
+D6D3BFFEEEF742FD832E2136C4CEED6B  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1657.38" y="-1335.98" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1718.34" y="-1352.80" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1775.10" y="-1382.23" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1823.44" y="-1424.27" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1846.57" y="-1462.10" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1836.06" y="-1504.14" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1796.12" y="-1531.47" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1739.36" y="-1569.31" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1691.02" y="-1573.51" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1665.79" y="-1560.90" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1659.49" y="-1537.78" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1667.89" y="-1512.55" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1670.00" y="-1491.53" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1670.00" y="-1466.31" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1667.89" y="-1447.39" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1657.38" y="-1432.68" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1636.36" y="-1417.96" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1621.65" y="-1401.15" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1617.45" y="-1354.90" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1636.36" y="-1340.19" z="3750.00" d="2.10" sid="S15"></point>
+  <point x="1648.98" y="-1340.19" z="3750.00" d="2.10" sid="S15"></point>
+</contour>
+<contour name="Area X" color="#FF04FF" closed="true" style="solid">
+  <property name="GUID">
+1F727695CDA64D3AAD0F7107AFDE1C33  </property>
+  <property name="MBFObjectType">
+5  </property>
+<resolution>2.102019</resolution>  <point x="1644.77" y="-1352.80" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1672.10" y="-1354.90" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1705.73" y="-1369.61" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1712.04" y="-1396.94" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1701.53" y="-1436.88" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1665.79" y="-1445.29" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1634.26" y="-1441.08" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1623.75" y="-1413.76" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1609.04" y="-1390.64" z="4010.00" d="2.10" sid="S16"></point>
+  <point x="1619.55" y="-1352.80" z="4010.00" d="2.10" sid="S16"></point>
+</contour>
+</mbf>
