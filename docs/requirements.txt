@@ -1,0 +1,4 @@
+sphinx
+scipy
+numpy
+sphinxcontrib-napoleon>=0.7
