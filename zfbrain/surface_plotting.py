@@ -335,14 +335,25 @@ def generate_HVC_surf(input_file):
         # uncomment this line to display slices and interpolant
         # icc.show_interpolate(xvals, yvals, N_interp)
 
+    # -----------------------------------------
+    # 4. generate other hemisphere by mirroring
+    # -----------------------------------------
+
+    new_nodes_R = mirror_nodes(new_nodes, N_interp, num_slices,
+                               MID_Z, DELTA_Z, OFFSET)
+
     # --------------------------
     # 4. write data to surf file
     # --------------------------
 
     L = num_slices
     N = N_interp
-    write_surf(new_nodes, L, N, output_filename,
-               description=f"This is the {output_filename}")
+    left_filename = output_filename + "_L"
+    write_surf(new_nodes, L, N, left_filename,
+               description=f"This is the {left_filename}")
+    right_filename = output_filename + "_R"
+    write_surf(new_nodes_R, L, N, right_filename,
+               description=f"This is the {right_filename}")
 
     print(f"Output file {output_filename}")
 
@@ -420,19 +431,31 @@ def generate_RA_surf(input_file):
         # uncomment this line to display slices and interpolant
         # icc.show_interpolate(xvals, yvals, N_interp)
 
+    # -----------------------------------------
+    # 4. generate other hemisphere by mirroring
+    # -----------------------------------------
+
+    new_nodes_R = mirror_nodes(new_nodes, N_interp, num_slices,
+                               MID_Z, DELTA_Z, OFFSET)
+
     # --------------------------
     # 4. write data to surf file
     # --------------------------
 
     L = num_slices
     N = N_interp
-    write_surf(new_nodes, L, N, output_filename,
-               description=f"This is the {output_filename}")
+    left_filename = output_filename + "_L"
+    write_surf(new_nodes, L, N, left_filename,
+               description=f"This is the {left_filename}")
+    right_filename = output_filename + "_R"
+    write_surf(new_nodes_R, L, N, right_filename,
+               description=f"This is the {right_filename}")
 
     print(f"Output file {output_filename}")
 
 
 def generate_X_surf(input_file):
+
     # This code is used to generate the HVC surf
 
     # needs to be hard-coded right now
@@ -505,13 +528,32 @@ def generate_X_surf(input_file):
         # uncomment this line to display slices and interpolant
         # icc.show_interpolate(xvals, yvals, N_interp)
 
+    # -----------------------------------------
+    # 4. generate other hemisphere by mirroring
+    # -----------------------------------------
+
+    new_nodes_R = mirror_nodes(new_nodes, N_interp, num_slices,
+                               MID_Z, DELTA_Z, OFFSET)
+
     # --------------------------
     # 4. write data to surf file
     # --------------------------
 
     L = num_slices
     N = N_interp
-    write_surf(new_nodes, L, N, output_filename,
-               description=f"This is the {output_filename}")
+    left_filename = output_filename + "_L"
+    write_surf(new_nodes, L, N, left_filename,
+               description=f"This is the {left_filename}")
+    right_filename = output_filename + "_R"
+    write_surf(new_nodes_R, L, N, right_filename,
+               description=f"This is the {right_filename}")
 
     print(f"Output file {output_filename}")
+
+
+def mirror_nodes(new_nodes, N_interp, num_slices, MID_Z, DELTA_Z, OFFSET):
+    new_nodes_R = np.copy(new_nodes)
+    for ti in range(num_slices):
+        for tj in range(N_interp-1, -1, -1):
+            new_nodes[ti*N_interp + tj, 2] = 2*MID_Z - DELTA_Z*ti - OFFSET
+    return new_nodes_R
