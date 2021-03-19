@@ -54,7 +54,7 @@ jobs:
         - pip3 install -r requirements.txt
         - pip3 install pyinstaller
       script: python3 -m unittest -v || python -m unittest -v
-      before_deploy: pyinstaller --onefile --clean --noconsole --add-data 'zfbrain/data/*.surf:zfbrain/data' --paths zfbrain --name zfbrain_windows.exe zfbrain/__main__.py 
+      before_deploy: pyinstaller --onefile --clean --noconsole --add-data 'zfbrain\data\*.surf:zfbrain\data' --paths zfbrain --name zfbrain_windows.exe zfbrain/__main__.py 
       deploy:
         provider: releases
         api_key: $RELEASE_TOKEN
