@@ -67,17 +67,17 @@ class brainView(gl.GLViewWidget):
                                   glOptions='additive')
 
         self.ra_R = gl.GLMeshItem(vertexes=verts_RA_R, faces=faces_RA_R,
-                                  color=(0, 0.5, 0.5, 0.2), smooth=True,
+                                  color=(0.5, 1, 0.5, 0.2), smooth=True,
                                   drawEdges=False, shader='balloon',
                                   glOptions='additive')
 
         self.areaX_L = gl.GLMeshItem(vertexes=verts_X_L, faces=faces_X_L,
-                                     color=(0, 0, 1, 0.2), smooth=True,
+                                     color=(0, 0.5, 0.5, 0.2), smooth=True,
                                      drawEdges=False, shader='balloon',
                                      glOptions='additive')
 
         self.areaX_R = gl.GLMeshItem(vertexes=verts_X_R, faces=faces_X_R,
-                                     color=(0, 0, 1, 0.2), smooth=True,
+                                     color=(1, 0.5, 1, 0.2), smooth=True,
                                      drawEdges=False, shader='balloon',
                                      glOptions='additive')
 

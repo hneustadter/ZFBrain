@@ -12,7 +12,7 @@ ZFBrain can be installed through the "Releases" tab on the right, where you shou
 
 ## Screenshots
 ZFBrain application in Windows:
-![image](https://user-images.githubusercontent.com/72104561/108907456-17fd2900-75f0-11eb-9941-316ed2cc738a.png)
+![image](https://user-images.githubusercontent.com/72104561/111705780-9f1c7600-8817-11eb-8623-646abe2ed996.png)
 
 ## Development
 
