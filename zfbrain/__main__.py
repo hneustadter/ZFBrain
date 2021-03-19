@@ -10,7 +10,7 @@ import numpy as np
 
 import pyqtgraph as pg
 import pyqtgraph.opengl as gl
-from PyQt5 import QtGui, QtWidgets
+from pyqtgraph.Qt import QtGui, QtWidgets
 
 import surface_plotting as sp
 
@@ -18,18 +18,30 @@ import surface_plotting as sp
 pg.setConfigOptions(antialias=True)
 
 
+# taken from https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+
 class brainView(gl.GLViewWidget):
     """ main class for viewing brain regions """
     def __init__(self, parent=None):
         super(brainView, self).__init__(parent)
 
-        HVC_L_file = "zfbrain/data/HVC_L.surf"
-        HVC_R_file = "zfbrain/data/HVC_R.surf"
-        RA_L_file = "zfbrain/data/RA_L.surf"
-        RA_R_file = "zfbrain/data/RA_R.surf"
-        X_L_file = "zfbrain/data/AreaX_L.surf"
-        X_R_file = "zfbrain/data/AreaX_R.surf"
-        brain_file = "zfbrain/data/whole_brain.surf"
+        HVC_L_file = resource_path("zfbrain/data/HVC_L.surf")
+        HVC_R_file = resource_path("zfbrain/data/HVC_R.surf")
+        RA_L_file = resource_path("zfbrain/data/RA_L.surf")
+        RA_R_file = resource_path("zfbrain/data/RA_R.surf")
+        X_L_file = resource_path("zfbrain/data/AreaX_L.surf")
+        X_R_file = resource_path("zfbrain/data/AreaX_R.surf")
+        brain_file = resource_path("zfbrain/data/whole_brain.surf")
 
         verts_HVC_L, faces_HVC_L = sp.read_surface(HVC_L_file)
         verts_HVC_R, faces_HVC_R = sp.read_surface(HVC_R_file)

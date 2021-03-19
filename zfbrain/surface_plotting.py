@@ -5,7 +5,7 @@
 
 import numpy as np
 from scipy import interpolate
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 import xml.etree.ElementTree as ET
 
 
@@ -124,7 +124,7 @@ def get_interpolant(xvals, yvals, Nvals):
 
     return xi[0:-1], yi[0:-1]
 
-
+"""
 def show_interpolate(xvals, yvals, Nvals):
     xi, yi = get_interpolant(xvals, yvals, Nvals)
 
@@ -137,7 +137,7 @@ def show_interpolate(xvals, yvals, Nvals):
     for i, txt in enumerate(range(len(xvals[0:-1]))):
         plt.annotate(txt, (xvals[i], yvals[i]))
     plt.show()
-
+"""
 
 def write_surf(A, L, N, out_filename, description=" "):
     """ Writes *.surf data file (ASCII format) into out_filename.surf.

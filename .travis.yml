@@ -10,7 +10,7 @@ jobs:
         - pip3 install -r requirements.txt
         - pip3 install pyinstaller
       script: python3 -m unittest -v || python -m unittest -v
-      before_deploy: pyinstaller --onefile --clean --paths zfbrain --name zfbrain_linux.exe zfbrain/__main__.py 
+      before_deploy: pyinstaller --onefile --clean --add-data 'zfbrain/data/*.surf:zfbrain/data' --paths zfbrain --name zfbrain_linux.exe zfbrain/__main__.py 
       deploy:
         provider: releases
         api_key: $RELEASE_TOKEN
@@ -30,7 +30,7 @@ jobs:
         - pip3 install pyinstaller
       script: python3 -m unittest -v || python -m unittest -v
       before_deploy: 
-        - pyinstaller --onefile --clean --windowed --paths zfbrain --name zfbrain_macos --osx-bundle-identifier UROP.OSS.brain zfbrain/__main__.py 
+        - pyinstaller --onefile --clean --windowed --add-data 'zfbrain/data/*.surf:zfbrain/data' --paths zfbrain --name zfbrain_macos --osx-bundle-identifier UROP.OSS.brain zfbrain/__main__.py 
         - zip dist/zfbrain_macos.zip dist/zfbrain_macos.app -r    # zip up app
       deploy:
         provider: releases
@@ -54,7 +54,7 @@ jobs:
         - pip3 install -r requirements.txt
         - pip3 install pyinstaller
       script: python3 -m unittest -v || python -m unittest -v
-      before_deploy: pyinstaller --onefile --clean --noconsole --paths orgochemvisualizer --name zfbrain_windows.exe zfbrain/__main__.py 
+      before_deploy: pyinstaller --onefile --clean --noconsole --add-data 'zfbrain/data/*.surf:zfbrain/data' --paths zfbrain --name zfbrain_windows.exe zfbrain/__main__.py 
       deploy:
         provider: releases
         api_key: $RELEASE_TOKEN
