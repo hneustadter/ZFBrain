@@ -228,6 +228,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.setWindowTitle('ZFBrain')
         self.resize(1000, 600)
+        self.setWindowIcon(QtGui.QIcon(resource_path("images/zfbrain_logo_small.png")))
 
         main_layout = QtWidgets.QHBoxLayout()
 

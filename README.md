@@ -1,3 +1,5 @@
+![ZFBrain logo](https://github.com/hneustadter/ZFBrain/tree/master/images/zfbrain_logo_large.png)
+
 # ZFBrain
 
 [![Documentation Status](https://readthedocs.org/projects/zfbrain/badge/?version=latest)](https://zfbrain.readthedocs.io/en/latest/?badge=latest)
