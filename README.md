@@ -1,4 +1,4 @@
-![ZFBrain logo](https://github.com/hneustadter/ZFBrain/tree/master/images/zfbrain_logo_large.png)
+<img src="images/zfbrain_logo_large.png" width="350" />
 
 # ZFBrain
 
