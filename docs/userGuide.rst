@@ -6,12 +6,17 @@ User\'s Guide
 Introduction
 ------------
 
-The ZFBrain software 
+ZFBrain displays an interactive visualization of the Zebra Finch brain in 3D.
+The software presents the brain regions important for vocalization, including
+the HVC, RA, and Area X. It is intended to be used as an aid for researchers
+studying these brain regions.
 
 Installation
 ------------
 
-To install ZFBrain, see the releases tab on our Github.
+To install ZFBrain, see the releases tab on our Github, or follow 
+`this link <https://github.com/hneustadter/ZFBrain/releases/latest>`_. ZFBrain is
+available on Windows, MacOS, and Linux.
 
 Scientific Background
 ---------------------
@@ -34,4 +39,10 @@ of a zebra finch that coordinates with the HVC to influence juvenile learning of
 song, particularly in the processes of vocal variation, exploration, and feedback-
 based evaluation. The RA consists of the vocal motor cortex and coordinates with
 the HVC to function largely in the recitation of bird song, specifically in relation
-to regulating the timing and serial order of song syllables.
+to regulating the timing and serial order of song syllables. [Bertram2020]_
+
+
+References
+----------
+
+.. [Bertram2020] Richard Bertram, Richard L. Hyson, Amanda J. Brunick, Diana Flores, Frank Johnson (2020) **Network Dynamics Underlie Learning and Performance of Birdsong**. *Current Opinion in Neurobiology*, 64:119-126.

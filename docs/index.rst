@@ -3,6 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. image:: ../images/zfbrain_logo_large.png
+  :width: 400
+  :align: center
+  :alt: ZFBrain logo
+
 Welcome to ZFBrain's documentation!
 ===================================
 
@@ -15,4 +20,4 @@ Zebra Finches. Please see the :ref:`user-guide` for information on how to use ZF
 
    userGuide
    developerGuide
-   modules
+   zfbrain
