@@ -10,7 +10,7 @@ import numpy as np
 
 import pyqtgraph as pg
 import pyqtgraph.opengl as gl
-from pyqtgraph.Qt import QtGui, QtWidgets
+from pyqtgraph.Qt import QtGui, QtWidgets, QtCore
 
 import surface_plotting as sp
 
@@ -82,9 +82,9 @@ class brainView(gl.GLViewWidget):
                                      glOptions='additive')
 
         self.outer = gl.GLMeshItem(vertexes=verts_brain, faces=faces_brain,
-                                   color=(1, 1, 1, 0.3), smooth=True,
-                                   drawEdges=False, shader='normalColor',
-                                   glOptions='opaque')
+                                   color=(200/255, 100/255, 100/255, 0.5),
+                                   drawEdges=False, drawFaces=True,
+                                   shader='shaded', glOptions='opaque')
 
         self.addItem(self.outer)
         self.addItem(self.hvc_L)
@@ -102,10 +102,10 @@ class brainView(gl.GLViewWidget):
         z_center = np.average(verts_brain[:, 2])
 
         # set camera settings
-        self.setCameraPosition(distance=2400, elevation=20)
         # sets center of rotation for field
         new_center = np.array([x_center, y_center, z_center])
         self.opts['center'] = pg.Vector(new_center)
+        self.setCameraPosition(distance=2400, elevation=20, azimuth=50)
 
     def redraw_surfaces(self, isCheckedList):
         self.clear()
