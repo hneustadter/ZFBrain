@@ -63,7 +63,72 @@ def read_surface(file_name):
 
         # load in vertices
         for ti in range(0, (L*N)):
-            verts[ti,0], verts[ti,1], verts[ti,2] = map(float, lines[ti+2].split(' '))
+            # switch y and z
+            verts[ti,0], verts[ti,2], verts[ti,1] = map(float, lines[ti+2].split(' '))
+
+        # generate last 2 ''ghost points''
+        first_gp_ind = L*N
+        last_gp_ind = L*N+1
+        for ti in range(3):
+            verts[first_gp_ind, ti] = np.mean(verts[0:N-1, ti])
+            verts[last_gp_ind, ti] = np.mean(verts[(L-1)*N:L*N, ti])
+
+        # generate edges for data in 'middle' slices
+        # for the love of god don't modify the indices here
+        for tl in range(L-1):
+            for tn in range(N):
+                ind1 = 2*(tn + tl*N)
+                ind2 = ind1 + 1
+
+                val1 = tl*N + tn
+                val2 = (tl+1)*N + (tn+1) % N
+                val3 = (tl+1)*N + tn
+                val4 = tl*N + (tn+1) % N
+
+                faces[ind1, 0] = val1
+                faces[ind1, 1] = val2
+                faces[ind1, 2] = val3
+                faces[ind2, 0] = val1
+                faces[ind2, 1] = val4
+                faces[ind2, 2] = val2
+
+        # last 2*N faces are to 'cap off' closed surface
+        # first face
+        for tn in range(N):
+            ind = 2*(L-1)*N + tn
+            faces[ind, 0] = tn
+            faces[ind, 1] = first_gp_ind
+            faces[ind, 2] = (tn+1) % N
+
+        # last face
+        for tn in range(N):
+            ind = 2*(L-1)*N + N + tn
+            faces[ind, 0] = (L-1)*N + tn
+            faces[ind, 1] = (L-1)*N + (tn + 1) % N
+            faces[ind, 2] = last_gp_ind
+
+    return verts, faces
+
+
+def read_surface_left(file_name):
+    """Similar to `read_surface(file_name)` leaves right surface open.
+    """
+    with open(file_name) as f:
+        lines = f.readlines()
+
+        # read in L=number of slices, N=number of data points per slice
+        L, N = map(int, lines[1].split(' '))
+
+        # generate data vertex array
+        n_vertex = L*N+2
+        n_faces = 2*N*L
+        verts = np.zeros((n_vertex, 3), float)
+        faces = np.zeros((n_faces, 3), int)
+
+        # load in vertices
+        for ti in range(0, (L*N)):
+            # switch y and z
+            verts[ti, 0], verts[ti, 2], verts[ti, 1] = map(float, lines[ti+2].split(' '))
 
         # generate last 2 ''ghost points''
         first_gp_ind = L*N
@@ -258,6 +323,102 @@ def generate_brainexterior_surf(input_file):
     N = N_interp
     write_surf(new_nodes, L, N, output_filename,
                description="This is the outer brain")
+
+    print(f"Output file {output_filename}")
+
+
+def generate_brainexterior_surf_new(input_file):
+    # This code is used to generate the HVC surf
+
+    # needs to be hard-coded right now
+    DELTA_Z = 40
+    MID_Z = DELTA_Z*18  # there are 18 total slices per hemisphere
+    N_interp = 100
+    OFFSET = 0*DELTA_Z
+
+    output_filename = "whole_brain"
+    filename = input_file
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    ATTRIB = 'Dendritic extension'
+
+    # ----------------------------------------------
+    # 1. first pass, get number of slices and points
+    # ----------------------------------------------
+
+    points = []
+
+    ti = 0
+    elID = 0
+    weird_url = '{http://www.mbfbioscience.com/2007/neurolucida}'
+    contour_str = weird_url + 'contour'
+    point_str = weird_url + 'point'
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            points.append(0)
+            for point in contour.iter(point_str):
+                points[ti] += 1
+            ti += 1
+        elID += 1
+
+    N_points = sum(points)
+    nodes = np.zeros((N_points, 3), dtype=float)
+
+    # -------------------------------
+    # 2. second pass, get actual data
+    # -------------------------------
+
+    ti = 0
+    for contour in root.iter(contour_str):
+        if (contour.attrib['name'] == ATTRIB):
+            for point in contour.iter(point_str):
+                nodes[ti, 0] = point.attrib['x']
+                nodes[ti, 1] = point.attrib['y']
+                nodes[ti, 2] = point.attrib['z']
+                ti += 1
+
+    # --------------------------------------------------------------
+    # 3. interpolate values so each slice has equal number of points
+    # --------------------------------------------------------------
+
+    num_slices = len(points)
+    new_nodes = np.zeros((num_slices*N_interp, 3), dtype=float)
+
+    for ti in range(num_slices):
+        ind_start = sum(points[0:ti])
+        ind_end = ind_start + points[ti]
+        xvals = nodes[ind_start:ind_end, 0]
+        yvals = nodes[ind_start:ind_end, 1]
+
+        xi, yi = get_interpolant(xvals, yvals, N_interp)
+
+        for tj in range(N_interp-1, -1, -1):
+            new_nodes[ti*N_interp + tj, 0] = xi[tj]
+            new_nodes[ti*N_interp + tj, 1] = yi[tj]
+            new_nodes[ti*N_interp + tj, 2] = DELTA_Z*ti + OFFSET
+
+        # uncomment this line to display slices and interpolant
+        # icc.show_interpolate(xvals, yvals, N_interp)
+
+    # -----------------------------------------
+    # 4. generate other hemisphere by mirroring
+    # -----------------------------------------
+
+    new_nodes_R = mirror_nodes(new_nodes, N_interp, num_slices,
+                               MID_Z, DELTA_Z, OFFSET)
+
+    # --------------------------
+    # 4. write data to surf file
+    # --------------------------
+
+    L = num_slices
+    N = N_interp
+    left_filename = output_filename + "_L"
+    write_surf(new_nodes, L, N, left_filename,
+               description=f"This is the {left_filename}")
+    right_filename = output_filename + "_R"
+    write_surf(new_nodes_R, L, N, right_filename,
+               description=f"This is the {right_filename}")
 
     print(f"Output file {output_filename}")
 

@@ -41,7 +41,8 @@ class brainView(gl.GLViewWidget):
         RA_R_file = resource_path("zfbrain/data/RA_R.surf")
         X_L_file = resource_path("zfbrain/data/AreaX_L.surf")
         X_R_file = resource_path("zfbrain/data/AreaX_R.surf")
-        brain_file = resource_path("zfbrain/data/whole_brain.surf")
+        brain_L_file = resource_path("zfbrain/data/whole_brain_L.surf")
+        brain_R_file = resource_path("zfbrain/data/whole_brain_R.surf")
 
         verts_HVC_L, faces_HVC_L = sp.read_surface(HVC_L_file)
         verts_HVC_R, faces_HVC_R = sp.read_surface(HVC_R_file)
@@ -49,7 +50,8 @@ class brainView(gl.GLViewWidget):
         verts_RA_R, faces_RA_R = sp.read_surface(RA_R_file)
         verts_X_L, faces_X_L = sp.read_surface(X_L_file)
         verts_X_R, faces_X_R = sp.read_surface(X_R_file)
-        verts_brain, faces_brain = sp.read_surface(brain_file)
+        verts_brain_L, faces_brain_L = sp.read_surface(brain_L_file)
+        verts_brain_R, faces_brain_R = sp.read_surface(brain_R_file)
 
         self.hvc_L = gl.GLMeshItem(vertexes=verts_HVC_L, faces=faces_HVC_L,
                                    color=(1, 0, 0, 0.2), smooth=True,
@@ -81,12 +83,18 @@ class brainView(gl.GLViewWidget):
                                      drawEdges=False, shader='balloon',
                                      glOptions='additive')
 
-        self.outer = gl.GLMeshItem(vertexes=verts_brain, faces=faces_brain,
+        self.outer_L = gl.GLMeshItem(vertexes=verts_brain_L, faces=faces_brain_L,
                                    color=(200/255, 100/255, 100/255, 0.5),
                                    drawEdges=False, drawFaces=True,
                                    shader='shaded', glOptions='opaque')
 
-        self.addItem(self.outer)
+        self.outer_R = gl.GLMeshItem(vertexes=verts_brain_R, faces=faces_brain_R,
+                                   color=(200/255, 100/255, 100/255, 0.5),
+                                   drawEdges=False, drawFaces=True,
+                                   shader='shaded', glOptions='opaque')
+
+        self.addItem(self.outer_L)
+        self.addItem(self.outer_R)
         self.addItem(self.hvc_L)
         self.addItem(self.hvc_R)
         self.addItem(self.ra_L)
@@ -97,9 +105,9 @@ class brainView(gl.GLViewWidget):
         self.setBackgroundColor(50, 50, 50)
 
         # choose center of whole-brain
-        x_center = np.average(verts_brain[:, 0])
-        y_center = np.average(verts_brain[:, 1])
-        z_center = np.average(verts_brain[:, 2])
+        x_center = np.average(np.concatenate((verts_brain_L[:, 0], verts_brain_R[:, 0])))
+        y_center = np.average(np.concatenate((verts_brain_L[:, 1], verts_brain_R[:, 1])))
+        z_center = np.average(np.concatenate((verts_brain_L[:, 2], verts_brain_R[:, 2])))
 
         # set camera settings
         # sets center of rotation for field
@@ -111,18 +119,20 @@ class brainView(gl.GLViewWidget):
         self.clear()
 
         if isCheckedList[0] is True:
-            self.addItem(self.outer)
+            self.addItem(self.outer_L)
         if isCheckedList[1] is True:
-            self.addItem(self.hvc_L)
+            self.addItem(self.outer_R)
         if isCheckedList[2] is True:
-            self.addItem(self.hvc_R)
+            self.addItem(self.hvc_L)
         if isCheckedList[3] is True:
-            self.addItem(self.areaX_L)
+            self.addItem(self.hvc_R)
         if isCheckedList[4] is True:
-            self.addItem(self.areaX_R)
+            self.addItem(self.areaX_L)
         if isCheckedList[5] is True:
-            self.addItem(self.ra_L)
+            self.addItem(self.areaX_R)
         if isCheckedList[6] is True:
+            self.addItem(self.ra_L)
+        if isCheckedList[7] is True:
             self.addItem(self.ra_R)
 
 
@@ -133,7 +143,8 @@ class BrainRegionChooser(QtWidgets.QWidget):
 
         layout = QtWidgets.QVBoxLayout()
         region_label = QtGui.QLabel("Choose which regions to show")
-        self.viewBrainCB = QtGui.QCheckBox("Outer Brain")
+        self.viewBrainLCB = QtGui.QCheckBox("Outer Brain (L)")
+        self.viewBrainRCB = QtGui.QCheckBox("Outer Brain (R)")
         self.viewHVCLCB = QtGui.QCheckBox("HVC (L)")
         self.viewHVCRCB = QtGui.QCheckBox("HVC (R)")
         self.viewAreaXLCB = QtGui.QCheckBox("Area X (L)")
@@ -141,7 +152,8 @@ class BrainRegionChooser(QtWidgets.QWidget):
         self.viewRALCB = QtGui.QCheckBox("RA (L)")
         self.viewRARCB = QtGui.QCheckBox("RA (R)")
 
-        self.viewBrainCB.setChecked(True)
+        self.viewBrainLCB.setChecked(True)
+        self.viewBrainRCB.setChecked(True)
         self.viewHVCLCB.setChecked(True)
         self.viewHVCRCB.setChecked(True)
         self.viewAreaXLCB.setChecked(True)
@@ -149,10 +161,11 @@ class BrainRegionChooser(QtWidgets.QWidget):
         self.viewRALCB.setChecked(True)
         self.viewRARCB.setChecked(True)
 
-        self.isCheckedList = [True, True, True, True, True, True, True]
+        self.isCheckedList = [True, True, True, True, True, True, True, True]
 
         layout.addWidget(region_label)
-        layout.addWidget(self.viewBrainCB)
+        layout.addWidget(self.viewBrainLCB)
+        layout.addWidget(self.viewBrainRCB)
         layout.addWidget(self.viewHVCLCB)
         layout.addWidget(self.viewHVCRCB)
         layout.addWidget(self.viewAreaXLCB)
@@ -164,46 +177,51 @@ class BrainRegionChooser(QtWidgets.QWidget):
 
     def get_checked_state(self):
         # Outer Brain
-        if self.viewBrainCB.isChecked():
+        if self.viewBrainLCB.isChecked():
             self.isCheckedList[0] = True
         else:
             self.isCheckedList[0] = False
 
-        # HVC L
-        if self.viewHVCLCB.isChecked():
+        if self.viewBrainRCB.isChecked():
             self.isCheckedList[1] = True
         else:
             self.isCheckedList[1] = False
 
-        # HVC R
-        if self.viewHVCRCB.isChecked():
+        # HVC L
+        if self.viewHVCLCB.isChecked():
             self.isCheckedList[2] = True
         else:
             self.isCheckedList[2] = False
 
-        # Area X L
-        if self.viewAreaXLCB.isChecked():
+        # HVC R
+        if self.viewHVCRCB.isChecked():
             self.isCheckedList[3] = True
         else:
             self.isCheckedList[3] = False
 
-        # Area X R
-        if self.viewAreaXRCB.isChecked():
+        # Area X L
+        if self.viewAreaXLCB.isChecked():
             self.isCheckedList[4] = True
         else:
             self.isCheckedList[4] = False
 
-        # RA L
-        if self.viewRALCB.isChecked():
+        # Area X R
+        if self.viewAreaXRCB.isChecked():
             self.isCheckedList[5] = True
         else:
             self.isCheckedList[5] = False
 
-        # RA R
-        if self.viewRARCB.isChecked():
+        # RA L
+        if self.viewRALCB.isChecked():
             self.isCheckedList[6] = True
         else:
             self.isCheckedList[6] = False
+
+        # RA R
+        if self.viewRARCB.isChecked():
+            self.isCheckedList[7] = True
+        else:
+            self.isCheckedList[7] = False
 
 
 class Settings(QtWidgets.QWidget):
@@ -239,7 +257,8 @@ class MainWindow(QtWidgets.QMainWindow):
         main_layout.addWidget(self.sl, stretch=1)
 
         # checkboxes
-        self.sl.brc.viewBrainCB.toggled.connect(self.something_toggled)
+        self.sl.brc.viewBrainLCB.toggled.connect(self.something_toggled)
+        self.sl.brc.viewBrainRCB.toggled.connect(self.something_toggled)
         self.sl.brc.viewHVCLCB.toggled.connect(self.something_toggled)
         self.sl.brc.viewHVCRCB.toggled.connect(self.something_toggled)
         self.sl.brc.viewAreaXLCB.toggled.connect(self.something_toggled)
