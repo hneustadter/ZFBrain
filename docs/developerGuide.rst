@@ -10,7 +10,7 @@ Contributions to ZFBrain are welcome!
 This section gives function and class definitions used in the development of ZFBrain. 
 
 Future Development
----------
+------------------
 
 We are currently working on implementing the following changes to ZFBrain:
 

@@ -17,7 +17,7 @@ def read_surface(file_name):
     L is the number of slices of data, N is the number of data points
     per slice. Each must be constant.
 
-    A typical *.surf data file is given by the following:
+    A typical `*.surf` data file is given by the following:
 
     .. code-block:: python
         :linenos:
@@ -111,7 +111,9 @@ def read_surface(file_name):
 
 
 def read_surface_left(file_name):
-    """Similar to `read_surface(file_name)` leaves right surface open.
+    """Similar to read_surface(file_name) leaves right surface open.
+
+    Not currently working as expected.
     """
     with open(file_name) as f:
         lines = f.readlines()
@@ -175,6 +177,7 @@ def read_surface_left(file_name):
 
 
 def get_interpolant(xvals, yvals, Nvals):
+    """Gets Nvals interpolant of periodic values (xvals, yvals)."""
     # append the starting x,y coordinates
     xvals = np.r_[xvals, xvals[0]]
     yvals = np.r_[yvals, yvals[0]]
@@ -189,20 +192,20 @@ def get_interpolant(xvals, yvals, Nvals):
 
     return xi[0:-1], yi[0:-1]
 
-"""
-def show_interpolate(xvals, yvals, Nvals):
-    xi, yi = get_interpolant(xvals, yvals, Nvals)
 
-    xi = np.r_[xi, xi[0]]
-    yi = np.r_[yi, yi[0]]
+#def show_interpolate(xvals, yvals, Nvals):
+#    xi, yi = get_interpolant(xvals, yvals, Nvals)
+#
+#    xi = np.r_[xi, xi[0]]
+#    yi = np.r_[yi, yi[0]]
+#
+#    # plot the results
+#    plt.plot(xi, yi, color="orange")
+#    plt.scatter(xvals, yvals)
+#    for i, txt in enumerate(range(len(xvals[0:-1]))):
+#        plt.annotate(txt, (xvals[i], yvals[i]))
+#    plt.show()
 
-    # plot the results
-    plt.plot(xi, yi, color="orange")
-    plt.scatter(xvals, yvals)
-    for i, txt in enumerate(range(len(xvals[0:-1]))):
-        plt.annotate(txt, (xvals[i], yvals[i]))
-    plt.show()
-"""
 
 def write_surf(A, L, N, out_filename, description=" "):
     """ Writes *.surf data file (ASCII format) into out_filename.surf.
@@ -228,9 +231,13 @@ def write_surf(A, L, N, out_filename, description=" "):
 
 
 def generate_brainexterior_surf(input_file):
-    # This code assumes that the hemisphere cut-off is given by the last 
-    # slice and is in the z-direction, and starts at zero
+    """Generates exterior surface of brain surf file.
 
+    This code assumes that the hemisphere cut-off is given by the last
+    slice and is in the z-direction, and starts at zero.
+
+    Note: This code is outdated. See generate_brainexterior_surf_new.
+    """
     # needs to be hard-coded right now
     DELTA_Z = 40
     MID_Z = DELTA_Z*18
@@ -328,7 +335,7 @@ def generate_brainexterior_surf(input_file):
 
 
 def generate_brainexterior_surf_new(input_file):
-    # This code is used to generate the HVC surf
+    """New function to generate 2 hemispheres of exterior surface."""
 
     # needs to be hard-coded right now
     DELTA_Z = 40
@@ -424,7 +431,7 @@ def generate_brainexterior_surf_new(input_file):
 
 
 def generate_HVC_surf(input_file):
-    # This code is used to generate the HVC surf
+    """Generates two HVC surf files for hemispheres."""
 
     # needs to be hard-coded right now
     DELTA_Z = 40
@@ -520,7 +527,7 @@ def generate_HVC_surf(input_file):
 
 
 def generate_RA_surf(input_file):
-    # This code is used to generate the HVC surf
+    """Generates two RA surf files for hemispheres."""
 
     # needs to be hard-coded right now
     DELTA_Z = 40
@@ -616,8 +623,7 @@ def generate_RA_surf(input_file):
 
 
 def generate_X_surf(input_file):
-
-    # This code is used to generate the HVC surf
+    """Generates two Area X surf files for hemispheres."""
 
     # needs to be hard-coded right now
     DELTA_Z = 40
@@ -713,6 +719,7 @@ def generate_X_surf(input_file):
 
 
 def mirror_nodes(new_nodes, N_interp, num_slices, MID_Z, DELTA_Z, OFFSET):
+    """Generates mirror nodes across hemispheres."""
     new_nodes_R = np.copy(new_nodes)
     for ti in range(num_slices):
         for tj in range(N_interp-1, -1, -1):
